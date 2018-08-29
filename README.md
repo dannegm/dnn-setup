@@ -2,4 +2,5 @@
 
 1. Just Run the Install script
 ```bash
-$ ./install.sh
+$ sudo sh ./install.sh
+```

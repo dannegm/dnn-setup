@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Givin Permision to Brew/Cask
+sudo chown -R $(whoami) /usr/local/Homebrew
+sudo chown -R $(whoami) /usr/local/var/homebrew/
+
 # List Of Common Programs
 casks=(
   google-chrome
@@ -11,7 +15,6 @@ casks=(
   slack
   skype
   spotify
-  node
   qlcolorcode
   qlstephen
   quicklook-json
@@ -22,6 +25,7 @@ casks=(
 
 # List Of Packages
 brews=(
+  zsh
   node
   mongodb
   nginx
@@ -30,6 +34,7 @@ brews=(
   "wget --with-iri"
 )
 
+# List of Git Confings
 git_configs=(
   "user.email ${dannegm}"
   "user.email ${git_email}"
@@ -37,6 +42,7 @@ git_configs=(
   "core.pager cat"
 )
 
+# List of Mac Default Confings
 mac_defaults_configs=(
   "com.apple.screencapture location ~/Desktop/Screenshots"
   "com.apple.finder QLEnableTextSelection -bool true"
@@ -49,21 +55,24 @@ mac_defaults_configs=(
   "com.apple.finder FXDefaultSearchScope -string 'SCcf'"
 )
 
+# List of dotfiles
 rc_files=(
   ".aliases"
   ".vars"
   ".functions"
+  ".colors"
   ".zshrc"
 )
 
 ######################################## End of app list ########################################
 set +e
 set -x
+source ./.colors &>/dev/null
 
 # Prompt
 function prompt {
   if [[ -z "${CI}" ]]; then
-    read -p "🖥 Enter to $1 ..."
+    read -p "🖥  $blue $1 ...$reset"
   fi
 }
 
@@ -74,11 +83,11 @@ function install {
   for pkg in "$@";
   do
     exec="$cmd $pkg"
-    prompt "⏳ Execute: $exec"
+    prompt "⏳  $yellow Execute: $exec $reset"
     if ${exec} ; then
-      echo "✅ Installed $pkg"
+      echo "✅  $green Installed $pkg $reset"
     else
-      echo "⛔️ Failed to execute: $exec"
+      echo "⛔️  $red Failed to execute: $exec $reset"
       if [[ ! -z "${CI}" ]]; then
         exit 1
       fi
@@ -90,10 +99,10 @@ function install {
 function brew_install {
   if brew ls --versions "$1" >/dev/null; then
     if (brew outdated | grep "$1" > /dev/null); then 
-      echo "Upgrading already installed package $1 ..."
+      echo "$blue Upgrading already installed package $cyanBold $1 $blue ...$reset"
       brew upgrade "$1"
     else 
-      echo "Latest $1 is already installed"
+      echo "$green Latest $1 is already installed $reset"
     fi
   else
     brew install "$1"
@@ -109,7 +118,7 @@ fi
 # Seeking for Brew/Cask
 if test ! "$(command -v brew)"; then
   prompt "Install Homebrew"
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
   if [[ -z "${CI}" ]]; then
     prompt "Update Homebrew"
@@ -144,25 +153,19 @@ done
 prompt "Set Mac defaults"
 for config in "${mac_defaults_configs[@]}"
 do
-  defaults write ${config}
+  sudo defaults write ${config}
 done
 killall Finder
 
 # Setup ZSH
 prompt "Setup ZSH"
-brew install zsh
 sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-read -p "Do you want to switch to ZSH promt? (y/n)" yn
-if [$yn="${yn#[Yy]}"]; then
-  zsh
-fi
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Setup Spaceship
 prompt "Setup Spaceship Theme"
 source "~/zshrc"
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 
 # Setup Powerline Fonts
 prompt "Setup Powerline Fonts"
@@ -176,13 +179,14 @@ rm -rf fonts
 prompt "Set ZSH Configs"
 for config in "${rc_files[@]}"
 do
-  mv "./${config}" "~/${config}"
-  source "~/${config}"
+  cp "./${config}" "~/${config}"
 done
 
 # Clean Up
 prompt "Cleanup"
 brew cleanup
 brew cask cleanup
+zsh
+exec ${SHELL} -l
 
 echo "Done!"

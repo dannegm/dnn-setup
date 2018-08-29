@@ -1,0 +1,46 @@
+# Reset
+reset=$'\e[0m'
+
+# Normal
+
+black=$'\e[0;30m'
+red=$'\e[0;31m'
+green=$'\e[0;32m'
+yellow=$'\e[0;33m'
+blue=$'\e[0;34m'
+purple=$'\e[0;35m'
+cyan=$'\e[0;36m'
+white=$'\e[0;37m'
+
+# Bold
+
+blackBold=$'\e[1;30m'
+redBold=$'\e[1;31m'
+greenBold=$'\e[1;32m'
+yellowBold=$'\e[1;33m'
+blueBold=$'\e[1;34m'
+purpleBold=$'\e[1;35m'
+cyanBold=$'\e[1;36m'
+whiteBold=$'\e[1;37m'
+
+# Underline
+
+blackUnderline=$'\e[4;30m'
+redUnderline=$'\e[4;31m'
+greenUnderline=$'\e[4;32m'
+yellowUnderline=$'\e[4;33m'
+blueUnderline=$'\e[4;34m'
+purpleUnderline=$'\e[4;35m'
+cyanUnderline=$'\e[4;36m'
+whiteUnderline=$'\e[4;37m'
+
+# Background
+
+blackBG=$'\e[40m'
+redBG=$'\e[41m'
+greenBG=$'\e[42m'
+yellowBG=$'\e[43m'
+blueBG=$'\e[44m'
+purpleBG=$'\e[45m'
+cyanBG=$'\e[46m'
+whiteBG=$'\e[47m'
