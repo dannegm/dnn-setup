@@ -24,6 +24,8 @@ casks=(
 brews=(
   node
   mongodb
+  nginx
+  screenfetch
   git
   "wget --with-iri"
 )
@@ -37,7 +39,14 @@ git_configs=(
 
 mac_defaults_configs=(
   "com.apple.screencapture location ~/Desktop/Screenshots"
-  "com.apple.finder QLEnableTextSelection -bool TRUE"
+  "com.apple.finder QLEnableTextSelection -bool true"
+  "com.apple.desktopservices DSDontWriteNetworkStores -bool true"
+  "com.apple.desktopservices DSDontWriteUSBStores -bool true"
+  "NSGlobalDomain AppleShowAllExtensions -bool true"
+  "com.apple.finder ShowStatusBar -bool true"
+  "com.apple.finder ShowPathbar -bool true"
+  "com.apple.finder _FXSortFoldersFirst -bool true"
+  "com.apple.finder FXDefaultSearchScope -string 'SCcf'"
 )
 
 rc_files=(
