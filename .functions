@@ -1,3 +1,5 @@
+# Utils Functions
+
 function reload_source {
   source "~/.${$1}"
 }

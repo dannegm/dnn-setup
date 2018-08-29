@@ -16,3 +16,4 @@ source $ZSH/oh-my-zsh.sh
 source ~/.vars
 source ~/.functions
 source ~/.aliases
+source ~/.colors

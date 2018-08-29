@@ -24,6 +24,7 @@ alias front='cd ./dashboard'
 alias back='cd ./mdt-api-directional-reports'
 
 # SSH
+
 alias ssh-dnn="sshpass -f <(printf '%s\n' ###) ssh root@dnn.im"
 
 # Nginx
@@ -45,8 +46,7 @@ alias @migrate='npm run migrate'
 alias @serve='npm run serve'
 alias @build='npm run build'
 
-
-# GIT Alias
+# GIT
 
 alias ga='git add -A'
 alias gc='git commit -m --no-verify'
