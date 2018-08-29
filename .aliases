@@ -45,6 +45,7 @@ alias @migrate='npm run migrate'
 alias @serve='npm run serve'
 alias @build='npm run build'
 
+
 # GIT Alias
 
 alias ga='git add -A'
