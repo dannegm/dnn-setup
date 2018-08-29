@@ -1,0 +1,70 @@
+# Here defines your aliases
+
+alias profile='nano ~/.zshrc'
+alias aliases='nano ~/.aliases'
+alias vars='nano ~/.vars'
+alias functions='nano ~/.functions'
+
+alias @reload='reload_source'
+
+# Tools
+
+alias subl='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
+alias https='http --default-scheme=https'
+alias img='catimg -w 64'
+alias search='grep -Rin -A 3 -B 3 -E --color'
+
+# links
+
+alias etc='/usr/local/etc/'
+alias localhost='cd ~/desktop/localhost'
+alias motive='cd ~/desktop/localhost/motive'
+alias front='cd ./dashboard'
+alias back='cd ./mdt-api-directional-reports'
+
+# SSH
+alias ssh-dnn="sshpass -f <(printf '%s\n' ###) ssh root@dnn.im"
+
+# Nginx
+
+alias nxstart='sudo brew services start nginx'
+alias nxstop='sudo brew services stop nginx'
+alias nxrestart='sudo brew services restart nginx'
+alias nxreload='sudo brew services reload nginx'
+alias nxconf='nano /usr/local/etc/nginx/nginx.conf'
+
+# Dev
+
+alias @install='sudo npm install'
+alias @dev='npm run dev'
+alias @debugger='npm run debug'
+alias @test='npm run test'
+alias @e2e='npm run e2e'
+alias @migrate='npm run migrate'
+alias @serve='npm run serve'
+alias @build='npm run build'
+
+# GIT Alias
+
+alias ga='git add -A'
+alias gc='git commit -m --no-verify'
+alias gri='git rebase -i'
+alias grc='git rebase --continue'
+alias gra='git rebase --abort'
+alias grs='git rebase --skip'
+
+alias @status='git status'
+alias @log='git log --oneline'
+alias @commit='ga & gc'
+alias @checkout='git checkout'
+alias @fetch='git fetch --all'
+alias @push='git push origin HEAD -f --no-verify'
+alias @pull='git pull --rebase'
+alias @stash='git stash'
+alias @rebase='git rebase'
+
+
+# PHP
+alias php='/Applications/MAMP/bin/php/php7.1.6/bin/php -c "/Library/Application Support/appsolute/MAMP PRO/conf/php7.1.6.ini"'
+alias pear='/Applications/MAMP/bin/php/php7.1.6/bin/pear'
+alias pecl='/Applications/MAMP/bin/php/php7.1.6/bin/pecl'
