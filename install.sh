@@ -7,7 +7,7 @@ sudo chown -R $(whoami) /usr/local/var/homebrew/
 # List Of Common Programs
 casks=(
   google-chrome
-  sublime-text
+  visual-studio-code
   hyper
   tunnelblick
   postman
@@ -31,12 +31,14 @@ brews=(
   nginx
   screenfetch
   git
+  mysql
+  Flask
   "wget --with-iri"
 )
 
 # List of Git Confings
 git_configs=(
-  "user.email ${dannegm}"
+  "user.name ${dannegm}"
   "user.email ${git_email}"
   "core.editor nano"
   "core.pager cat"
@@ -62,6 +64,37 @@ rc_files=(
   ".functions"
   ".colors"
   ".zshrc"
+)
+
+# VSCode Extensions
+vscode_extensions=(
+  "aaron-bond.better-comments"
+  "alefragnani.Bookmarks"
+  "bierner.color-info"
+  "blairleduc.touch-bar-display"
+  "christian-kohler.path-intellisense"
+  "cybai.yaml-key-viewer"
+  "dariofuzinato.vue-peek"
+  "EditorConfig.EditorConfig"
+  "emilast.LogFileHighlighter"
+  "Equinusocio.vsc-material-theme"
+  "fabiospampinato.vscode-commands"
+  "formulahendry.auto-close-tag"
+  "formulahendry.code-runner"
+  "hoovercj.vscode-power-mode"
+  "humao.rest-client"
+  "kisstkondoros.vscode-gutter-preview"
+  "mitchdenny.ecdc"
+  "ms-python.python"
+  "octref.vetur"
+  "paulmolluzzo.convert-css-in-js"
+  "PKief.material-icon-theme"
+  "shakram02.bash-beautify"
+  "shanoor.vscode-nginx"
+  "shyykoserhiy.vscode-spotify"
+  "toba.vsfire"
+  "wholroyd.jinja"
+  "wix.vscode-import-cost"
 )
 
 ######################################## End of app list ########################################
@@ -157,15 +190,23 @@ do
 done
 killall Finder
 
+# VSCode Setup
+prompt "Install VSCode Extensions"
+for extension in "${vscode_extensions[@]}"
+do
+  code --install-extension ${extension}
+done
+
 # Setup ZSH
 prompt "Setup ZSH"
-sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh
+sudo echo /usr/local/bin/zsh >> /etc/shells && chsh -s /usr/local/bin/zsh
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Setup Spaceship
 prompt "Setup Spaceship Theme"
 source "~/zshrc"
 sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # Setup Powerline Fonts
 prompt "Setup Powerline Fonts"
@@ -182,11 +223,17 @@ do
   cp "./${config}" "~/${config}"
 done
 
+# Other Plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # Clean Up
 prompt "Cleanup"
 brew cleanup
 brew cask cleanup
 zsh
 exec ${SHELL} -l
+
+sudo chown user:group $HISTFILE
+sudo chown developer:staff $HISTFILE
 
 echo "Done!"

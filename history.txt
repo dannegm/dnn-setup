@@ -1,0 +1,2080 @@
+    1  sh ./install.sh
+    2  bash
+    3  cat .zsh_history
+    4  sudo cat .zsh_history
+    5  echo $HISTFILE
+    6  echo $SAVEHIST
+    7  ls -l $HISTFILE
+    8  sudo chown user:group $HISTFILE
+    9  sudo chown developer:staff $HISTFILE
+   10  ls
+   11  clear
+   12  cat .zsh_history
+   13  motive && front
+   14  history
+   15  sudo chmod -R 777 ./node_modules
+   16  @install
+   17  npm install
+   18  ssh-add ~/.ssh/id_rsa
+   19  npm rebuild
+   20  npm install
+   21  ls
+   22  sudo rm -R node_modules
+   23  sudo rm -R package-lock
+   24  sudo rm -R package-lock.json
+   25  ls
+   26  clear
+   27  npm install
+   28  @dev
+   29  motive && front
+   30  git config user.name "egarcia\n"
+   31  git config user.name "egarcia_motive"
+   32  git config user.email "egarcia@motivedrilling.com"
+   33  motive && back
+   34  git config user.email "egarcia@motivedrilling.com"
+   35  git config user.name "egarcia_motive"
+   36  clear
+   37  motive && front
+   38  code .
+   39  mongo
+   40  motive && back
+   41  @migrate
+   42  code .
+   43  mongo localhost:27017/directionalReports ./app/seeds/slideReportSampleData.js
+   44  motive && motive
+   45  motive && back
+   46  ls
+   47  clear
+   48  @dev
+   49  motive && front
+   50  motive && back
+   51  @dev
+   52  motive && back
+   53  motive && front
+   54  clear
+   55  code .
+   56  clear
+   57  cwd
+   58  clear
+   59  code .
+   60  clear
+   61  git pull --rebase
+   62  ssh-add ~/.ssh/md_rsa
+   63  git pull --rebase
+   64  clear
+   65  @checkout GDL-609-bha-individual-binding 
+   66  @log
+   67  @log -n 5
+   68  @dev
+   69  aliases
+   70  @dev
+   71  motive && front
+   72  motive && back
+   73  @dev
+   74  clear
+   75  motive && back
+   76  @de
+   77  @dev
+   78  motive && front
+   79  @pull
+   80  git status
+   81  @stash
+   82  aliases
+   83  @rs
+   84  @pop
+   85  @stash
+   86  @pull
+   87  ssh-add ~/.ssh/md_rsa
+   88  @pull
+   89  @checkout dev
+   90  @pull
+   91  code .
+   92  @status
+   93  @checkout GDL-609-bha-individual-binding 
+   94  clear
+   95  @pop
+   96  clear
+   97  >
+   98  ~
+   99  clear
+  100  brew install mysql
+  101  clear
+  102  pip install Flask
+  103  python
+  104  localhos
+  105  localhost
+  106  take flasktuto
+  107  code .
+  108  python helloworld.py
+  109  mysql /u root
+  110  mysql -u root
+  111  mysql
+  112  python helloworld.py
+  113  take templates
+  114  python helloworld.py
+  115  cd ..
+  116  python helloworld.py
+  117  git init
+  118  ga
+  119  gc "Class 1-6, Hello Worl"
+  120  aliases
+  121  ga
+  122  gc "Class 1-6, Hello Worl"
+  123  gc "Class 1-6, Hello World"
+  124  git add -A
+  125  git commit -m "Class 1-6, Hello Worl"
+  126  @commit "Class 7, templating"
+  127  aliases
+  128  @rs
+  129  @commit "Class 7, templating"
+  130  ga && gc "Class 7, templating"
+  131  (ga: gc "Class 7, templating")
+  132  (ga; gc "Class 7, templating")
+  133  ga
+  134  gc "Class 7, templating"
+  135  aliases
+  136  @rs
+  137  gc "Class 7, templating"
+  138  @commit "Class 8, Static files"
+  139  aliases
+  140  @rs
+  141  python forms.py
+  142  python -m pip install -U "pylint<2.0.0"
+  143  python forms.py
+  144  pip install WTForms
+  145  python forms.py
+  146  python comments.py
+  147  @commit "Class 11, Forms"
+  148  @commit "Class 12, Send form data"
+  149  @commit "Class 14, Validate forms"
+  150  motive && back
+  151  code .
+  152  motive && front
+  153  @dev
+  154  motive && back
+  155  @status
+  156  @diff
+  157  @commit "Error Handler Improve"
+  158  @commit "Refactor & Binding PDF Report"
+  159  @push
+  160  aliases
+  161  @rebase origin/dev
+  162  @checkout GDL-604-US-reports-binding 
+  163  @rebase origin/dev
+  164  @push
+  165  @checkout GDL-609-bha-individual-binding 
+  166  @rebase origin/GDL-604-US-reports-binding 
+  167  @push
+  168  search "<<<" ./app
+  169  ping -A dnnhub-5825b.firebaseapp.com
+  170  ping -A dnn.one
+  171  dig MX dnn.im
+  172  dig MX mail.dnn.im
+  173  dig MX mail.dnn.one
+  174  dig MX dnn.one
+  175  ping -A mail.dnn.im
+  176  ping -a email.dnn.im
+  177  ping -a email.dnn.one
+  178  ping lizmerino.me
+  179  ping -a http://ns1.elevent2.com/
+  180  ping -a ns100.elevent2.com
+  181  ping -a ns100.eleven2.com
+  182  motive && back
+  183  @status
+  184  @commit "Code Review Fixes"
+  185  @push
+  186  motive && front
+  187  @dev
+  188  @deb
+  189  @dev
+  190  motive && front
+  191  code .
+  192  motive && back
+  193  @checkout dev
+  194  @fetch
+  195  @checkout GDL-641-BugFix-BHAInfo-CommentsCasingBug 
+  196  code .
+  197  @dev
+  198  @checkout GDL-604-US-reports-binding 
+  199  @pull
+  200  git status
+  201  git fetch && git checkout GDL-647-add-support-to-export-zips-witou
+  202  git status
+  203  @checkout dev
+  204  @pull
+  205  git fetch
+  206  git pull --rebase
+  207  git log
+  208  git log -n 10
+  209  git checkout GDL-4611
+  210  clear
+  211  motive && back
+  212  @checkout GDL-461-excel-slidesheets-refactor 
+  213  @install
+  214  git reset --hard
+  215  clear
+  216  @checkout GDL-604-US-reports-binding 
+  217  @checkout GDL-647-add-support-to-export-zips-witou 
+  218  @status
+  219  @commit "GDL-647 #time 1h #comment Add support to choice what kind of formats are availabel into the zip"
+  220  @push
+  221  @status
+  222  git fetch && git checkout GDL-649-bugfix-tools-on-location-bugfixes
+  223  @status
+  224  @commit "GDL-649 #time 15m #comment GDL-487 are resolved" --no-verify
+  225  code .
+  226  code .env
+  227  clear
+  228  @dev
+  229  code .
+  230  motive && back
+  231  code .
+  232  @commit "GDL-647 #time 15m #comment fix typo"
+  233  @push
+  234  ssh-add ~/.ssh/md_rsa
+  235  @push
+  236  @checkout GDL-604-US-reports-binding 
+  237  @pull
+  238  @rebase origin/dev
+  239  search "<<<" ./app
+  240  ga
+  241  grc
+  242  git status
+  243  search "<<<" ./app
+  244  ga
+  245  grc
+  246  search "<<<" ./app
+  247  ga
+  248  grc
+  249  clear
+  250  @push
+  251  @commit "GDL-604 #time 10m #comment Fix typo"
+  252  @push
+  253  motive && front
+  254  code .
+  255  @dev
+  256  motive && front
+  257  @status
+  258  @commit "GDL-649 #time 1d #commit Tools On Location Fixes"
+  259  @commit "GDL-649 #time 1d #commit Tools On Location Fixes" --no-verify
+  260  @push
+  261  @push --no-verify
+  262  @commit "GDL-649 #time 5m #comment Host"
+  263  @commit "GDL-649 #time 5m #comment Host" --no-verify
+  264  @push --no-verify
+  265  @commit "GDL-649 #time 5m #comment Remove logs" --no-verify
+  266  @push --no-verify
+  267  code .
+  268  motive && back
+  269  code .
+  270  @commit "GDL-649 #time 5m #comment fix typo" --no-verify
+  271  @push --no-verify
+  272  code .
+  273  @status
+  274  @checkout dev-directional-reports 
+  275  @pull
+  276  git fetch && git checkout GDL-653-refactor-datepicker-component
+  277  @status
+  278  @stash
+  279  git fetch && git checkout GDL-653-refactor-datepicker-component
+  280  @pop
+  281  search "<<<" ./src/directional-reports
+  282  @status
+  283  @commit "GDL-653 #time 2h #comment Refactor Datepicker"
+  284  @commit "GDL-653 #time 2h #comment Refactor Datepicker" --no-verify
+  285  @push --no-verify
+  286  @commit "GDL-653 #time 2h #comment Refactor HOST" --no-verify
+  287  @push --no-verify
+  288  @rebase origin/dev-directional-reports 
+  289  search "<<<" ./src/directional-reports
+  290  ga
+  291  grc
+  292  @push --no-verify
+  293  @commit "GDL-653 #time 20m #comment Fix coments from code review" --no-verify
+  294  @push --no-verify
+  295  functions
+  296  motive && front
+  297  .git
+  298  ls
+  299  @rs
+  300  commit adad
+  301  functions
+  302  @rs
+  303  commit adad
+  304  functions
+  305  vars
+  306  @rs
+  307  commit adad
+  308  functions
+  309  aliases
+  310  @rs
+  311  @commit "prueba"
+  312  functions
+  313  @commit "prueba"@rs
+  314  @rs
+  315  @commit "prueba"
+  316  @rs
+  317  @commit "prueba"
+  318  functions
+  319  @commit "prueba"
+  320  @rs
+  321  @commit "prueba"
+  322  @commit "GDL-649 #time 5m #comment fix typo"
+  323  functions
+  324  aliases
+  325  functions
+  326  @push
+  327  @rs
+  328  push
+  329  @push
+  330  nvm use --delete-prefix v8.12.0 --silent
+  331  @rs
+  332  @push
+  333  aliases
+  334  clear
+  335  ..
+  336  ls
+  337  @checkout dev-directional-reports 
+  338  @pull
+  339  clear
+  340  code .
+  341  open .
+  342  motive && back
+  343  @pull
+  344  @rebase origin/dev
+  345  search "<<<" ./src/directional-reports
+  346  search "<<<" ./app
+  347  code .
+  348  search "<<<" ./app
+  349  ga
+  350  grc
+  351  @push
+  352  @pull
+  353  @checkout dev
+  354  @pull
+  355  @dev
+  356  motive && front
+  357  code .
+  358  search "#ffc73d" ./src
+  359  git fetch && git checkout GDL-656-bugfix-improve-calendarinput-co
+  360  @status
+  361  @diff
+  362  aliases
+  363  @rs
+  364  @diff
+  365  git diff
+  366  aliases
+  367  @rs
+  368  @diff
+  369  @commit "GDL-656 #time 2h #comment Fixes & Improves of CalendarInput Component"
+  370  @push
+  371  @install https://dalqahub05.motivedrilling.com
+  372  @install -g @vue/cli
+  373  vue --version
+  374  clear
+  375  vue create qtxpress
+  376  ls
+  377  mv qtxpress ../qtxpress
+  378  ls
+  379  ..
+  380  ls
+  381  mv qtxpress ../qtxpress
+  382  ..
+  383  ls
+  384  clear
+  385  ls
+  386  qt
+  387  qtxpress
+  388  ls
+  389  open .
+  390  code .
+  391  @serve
+  392  @install -s buefy
+  393  sudo nvm use --delete-prefix v8.12.0 --silent
+  394  nvm
+  395  sudo nvm use --delete-prefix v8.12.0 --silent
+  396  nvm use --delete-prefix v8.12.0 --silent
+  397  clear
+  398  @install -g firebase-tools
+  399  firebase login
+  400  firebase init
+  401  @install firebase -s
+  402  @install -s @fortawesome/fontawesome-free
+  403  motive && back
+  404  code .
+  405  localhost
+  406  clear
+  407  localhost && qtxpress
+  408  @install -s mailgun-js
+  409  npm install --save dns
+  410  npm install axios -s
+  411  curl -s --user 'api:YOUR_API_KEY' \\n    https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages \\n    -F from='Excited User <mailgun@YOUR_DOMAIN_NAME>' \\n    -F to=YOU@YOUR_DOMAIN_NAME \\n    -F to=bar@example.com \\n    -F subject='Hello' \\n    -F text='Testing some Mailgun awesomeness!'\ncurl -s --user 'api:YOUR_API_KEY' \\n    https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages \\n    -F from='Excited User <mailgun@YOUR_DOMAIN_NAME>' \\n    -F to=YOU@YOUR_DOMAIN_NAME \\n    -F to=bar@example.com \\n    -F subject='Hello' \\n    -F text='Testing some Mailgun awesomeness!'\n
+  412  curl -v --user 'api:YOUR_API_KEY' \\n    https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages \\n    -F from='Excited User <mailgun@YOUR_DOMAIN_NAME>' \\n    -F to=YOU@YOUR_DOMAIN_NAME \\n    -F to=bar@example.com \\n    -F subject='Hello' \\n    -F text='Testing some Mailgun awesomeness!'\n
+  413  @install axios -s
+  414  @serve
+  415  firebase deploy
+  416  @build
+  417  firebase deploy
+  418  @serve
+  419  @build
+  420  firebase deploy
+  421  @serve
+  422  @build
+  423  firebase deploy
+  424  git init
+  425  @commit "Initial commit"
+  426  git rm .firebase
+  427  git rm -R .firebase*
+  428  git rm .firebase*
+  429  git rm .firebase
+  430  git rm -r .firebase*
+  431  git rm -r .firebase
+  432  git rm .firebaserc
+  433  @commit "Cleanup"
+  434  @push
+  435  git remote add origin git@github.com:dannegm/qtxpress.git
+  436  @push
+  437  @serve
+  438  clear
+  439  @commit "Navigation & Sections"
+  440  @push
+  441  @build
+  442  firebase deploy
+  443  @rs
+  444  firebase deploy
+  445  @commit "QT Title"
+  446  @build
+  447  firebase deploy
+  448  @push
+  449  localhost && qtxpress
+  450  motive && front
+  451  @checkout dev-directional-reports 
+  452  @pull
+  453  code .
+  454  npm install -s mailgun-js
+  455  localhost && qtxpress
+  456  @dev
+  457  motive && front
+  458  @log
+  459  @log -n 5
+  460  @serve
+  461  npm install --save dns
+  462  @serve
+  463  firebase init
+  464  @rs
+  465  firebase init
+  466  firebase login
+  467  firebase init
+  468  function\nls
+  469  functions
+  470  cd functions
+  471  npm install -s mailgun-js
+  472  npm run deploy
+  473  @rs
+  474  npm run deploy
+  475  firebase functions:config:set mailgun.apiKey="key-e983c135006ab7f6f89a7cf2db12aab8" mailgun.domain="mailgun.dnn.one"
+  476  firebase functions:config:set mailgun.api_key="key-e983c135006ab7f6f89a7cf2db12aab8" mailgun.domain="mailgun.dnn.one"
+  477  npm run deploy
+  478  @diff
+  479  @commit "Firebase Function to send emails"
+  480  clear
+  481  @build
+  482  ..
+  483  @status
+  484  @build
+  485  @status
+  486  @commit "Firebase Function to send emails"
+  487  @build
+  488  firebase deploy
+  489  @push
+  490  @commit "Improves sending email"
+  491  @push
+  492  @build
+  493  aliases
+  494  @rs
+  495  vm use --delete-prefix v8.12.0 --silent
+  496  nvm use --delete-prefix v8.12.0 --silent
+  497  @rs
+  498  npm config delete prefix
+  499  @rs
+  500  clear
+  501  @build
+  502  @delpoy
+  503  @rs
+  504  aliases
+  505  clear
+  506  @rs
+  507  @deploy
+  508  @commit "Improves sending email"
+  509  @push
+  510  npm install vuelidate --save
+  511  @commit "Improve sections"
+  512  @push
+  513  @build
+  514  @deploy
+  515  vue add vuetify
+  516  npm install material-design-icons-iconfont -s
+  517  @commit "Admin Support"
+  518  @push
+  519  @build
+  520  @deploy
+  521  open .
+  522  @serve
+  523  clear
+  524  motive && front
+  525  motive && back
+  526  clear
+  527  @dev
+  528  2dev
+  529  @dev
+  530  motive && front
+  531  motive && back
+  532  clear
+  533  code .
+  534  @pull
+  535  @status
+  536  @pull
+  537  clear
+  538  @checkout dev
+  539  @checkout dev-directional-reports 
+  540  @pull
+  541  clear
+  542  @pull
+  543  @dev
+  544  code .
+  545  @dev
+  546  npm install node-msoffice-pdf
+  547  @dev
+  548  git reset hard
+  549  git status
+  550  git reset --hard
+  551  clear
+  552  git fetch && git checkout GDL-676-BugFix-utilizationshow-bha-diagram
+  553  @status
+  554  @commit "GDL-676 #time 15m #comment Get Rid of BHA Diagram Modal & Fix Generate Reports Tab"
+  555  @push
+  556  code .
+  557  clear
+  558  @dev
+  559  code .
+  560  @checkout dev-directional-reports 
+  561  clear
+  562  @pull
+  563  ...
+  564  ls
+  565  qt
+  566  qtxpress
+  567  code .
+  568  @serve
+  569  motive && back
+  570  code .
+  571  motive && front
+  572  @dev
+  573  motive && front
+  574  @dev
+  575  motive && back
+  576  @dev
+  577  motive && back
+  578  open .
+  579  @dev
+  580  clear
+  581  @status
+  582  @stash
+  583  git fetch && git checkout GDL-631-bugfixes-slidereports-issue
+  584  ssh-add ~/.ssh/md_rsa
+  585  git fetch && git checkout GDL-631-bugfixes-slidereports-issue
+  586  @pop
+  587  @commit "GDL-631 #time 2d #comment Slide Reports Issue is Solved"
+  588  @push
+  589  @commit "GDL-631 #time 2d #comment Slide Reports Issue is Solved"
+  590  @push
+  591  @dev
+  592  clear
+  593  @commit "GDL-631 #time 1h #comment Fix Styles & Paginator"
+  594  @push
+  595  ...
+  596  qtxpress
+  597  clear
+  598  code .
+  599  @serve
+  600  open .
+  601  npm install vue2-google-maps -s
+  602  @build
+  603  @deploy
+  604  @rs
+  605  @deploy
+  606  motive && back
+  607  motive && front
+  608  code .
+  609  @pull
+  610  ssh-add ~/.ssh/md_rsa
+  611  @push
+  612  motive && back
+  613  @pull
+  614  @checkout dev
+  615  @pull
+  616  @dev
+  617  motive && front
+  618  @pull
+  619  @status
+  620  @stash
+  621  @pull
+  622  npm prune
+  623  npm prune && npm install
+  624  @dev
+  625  @pop
+  626  clear
+  627  @dev
+  628  @build
+  629  @deploy
+  630  @rs
+  631  @deploy
+  632  @commit "First look to the Landing"
+  633  @push
+  634  src
+  635  ls
+  636  touch utils
+  637  @serve
+  638  clear
+  639  @build
+  640  @deploy
+  641  @commit "Some BugFixes"
+  642  @push
+  643  @serve
+  644  @build
+  645  @deploy
+  646  npm i --save vue-animate-scroll
+  647  npm install animate.css --save
+  648  @serve
+  649  @build
+  650  @deploy
+  651  @rs
+  652  @deploy
+  653  @serve
+  654  @build
+  655  @deploy
+  656  ...
+  657  luxy
+  658  serve
+  659  npm install -g serve
+  660  serve
+  661  @commit "Animations & Icons"
+  662  @serve
+  663  @build
+  664  @deploy
+  665  @commit "Slider Component"
+  666  @push
+  667  @serve
+  668  @build
+  669  @deploy
+  670  @serve
+  671  clear
+  672  @build
+  673  @deploy
+  674  @commit "Trailer"
+  675  @push
+  676  @serve
+  677  @build
+  678  @deploy
+  679  @commit "Last Details"
+  680  @push
+  681  @serve
+  682  @build
+  683  @deploy
+  684  @commit "Improve Email Message"
+  685  @push
+  686  clear
+  687  motive && front
+  688  ..
+  689  ls
+  690  mv dashboard front
+  691  ls
+  692  mv mdt-api-directional-reports back
+  693  ls
+  694  clear
+  695  aliases
+  696  ls
+  697  clear
+  698  @rs
+  699  nvm alias default v8
+  700  nvm use default
+  701  clear
+  702  nvm use default
+  703  clear
+  704  @rs
+  705  nvm use --delete-prefix v8.12.0 --silent
+  706  clear
+  707  @rs
+  708  motive && front
+  709  open .
+  710  git fetch && git checkout GDL-206-bugfix-costing-daily-cost
+  711  clear
+  712  code .
+  713  motive && back
+  714  clear
+  715  @dev
+  716  clear
+  717  @dev
+  718  @commit "GDL-206 #time 30m #comment Fix auto select exportable format & Dir Reports Menu Item"
+  719  localhost && qtxpress
+  720  code .
+  721  @build
+  722  motive && front
+  723  motive && back
+  724  localhost && qtxpress
+  725  @serve
+  726  @commit "Dashboard redesign"
+  727  @commit "Login improvements"
+  728  @push
+  729  @build
+  730  @deploy --only hosting
+  731  @rs
+  732  @deploy --only hosting
+  733  @rs
+  734  @deploy --only hosting
+  735  @deploy -h
+  736  @deploy --help
+  737  @deploy
+  738  @commit "Remove database rules"
+  739  @build
+  740  @push
+  741  @deploy
+  742  @build
+  743  @deploy
+  744  @commit "Remove database rules"
+  745  @push
+  746  @build
+  747  @deploy
+  748  @build
+  749  @deploy
+  750  clear
+  751  @build
+  752  @deploy
+  753  @commit "Users List"
+  754  @push
+  755  @build
+  756  @deploy
+  757  @serve
+  758  npm install uuid -s
+  759  @build
+  760  @deploy
+  761  @commit "Create & Remove User"
+  762  @push
+  763  @build
+  764  @deploy
+  765  @commit "Improve Template"
+  766  @push
+  767  clear
+  768  @serve
+  769  @build
+  770  @pull
+  771  @checkout gdl-696
+  772  @checkout GDL-696-US-job-info-tab 
+  773  clear
+  774  @pull
+  775  git status
+  776  git fetch && git checkout GDL-698-set-the-job-info-tab-to-read-onl
+  777  clear
+  778  @status
+  779  @diff
+  780  @status
+  781  ga src/directional-reports/common/factories/job.factory.js
+  782  ga src/directional-reports/directional-reports.controller.js
+  783  ga src/directional-reports/directional-reports.tpl.html
+  784  ga src/directional-reports/index.scss
+  785  @commit "Auto-sync & Job Info Read Only"
+  786  @push
+  787  @commit "Revert Reducer Identation"
+  788  @push
+  789  @status
+  790  @commit "GDL-698 #time 2h #comment Auto-sync & JobInfo Read Only"
+  791  @push
+  792  @commit "Abstract Class"
+  793  @push
+  794  @commit "Resize Job Selector"
+  795  @commit "Host"
+  796  @push
+  797  @checkout GDL-696-job-info-tab-must-be-read-only
+  798  @rebase origin/dev-directional-reports 
+  799  @pull
+  800  @rebase origin/dev-directional-reports 
+  801  @push
+  802  @checkout dev-directional-reports 
+  803  @pull
+  804  @checkout GDL-206-bugfix-costing-daily-cost 
+  805  @stash
+  806  @checkout GDL-206-bugfix-costing-daily-cost 
+  807  @pop
+  808  @rebase origin/dev-directional-reports 
+  809  @commit "GDL-206 #time 1d #comment Job Costing Fixes"
+  810  @push
+  811  mongo
+  812  clear
+  813  @commit "GDL-206 #time 1d #comment Daily Cost, General Fixes"
+  814  @push
+  815  @commit "HOST"
+  816  @push
+  817  @commit "Prevent Conflicts"
+  818  @push
+  819  @rebase origin/dev-directional-reports 
+  820  @push
+  821  @commit "Prevent Conflicts"
+  822  @push
+  823  npm install
+  824  @commit "Recovering Package.lock"
+  825  @push
+  826  git reset -- package-lock.json
+  827  @push
+  828  git reset -- package-lock.json
+  829  @commit "Skipping package-lock"
+  830  git reset -- package-lock.json
+  831  @commit "Skipping package-lock"
+  832  @push
+  833  nano package-lock.json
+  834  @commit "Skipping package-lock"
+  835  @push
+  836  @log -n 10
+  837  gri 4858c6566
+  838  @push
+  839  @commit "Remove console log"
+  840  @push
+  841  @checkout dev
+  842  @stash
+  843  @ull
+  844  @pull
+  845  @checkout dev-directional-reports 
+  846  @pull
+  847  @pop
+  848  @dev
+  849  @migrate
+  850  @checkout dev-directional-reports 
+  851  @stash
+  852  git stash drop
+  853  @status
+  854  @stash
+  855  git reset --hard
+  856  @checkout dev-directional-reports 
+  857  @pull
+  858  code .
+  859  @status
+  860  @stash
+  861  @pull
+  862  @stash
+  863  git fetch && git checkout GDL-711-bugfix-cant-set-cost-to-new-item
+  864  @pop
+  865  @commit "GDL-711 #time 4h #comment Fixe the match of the new items"
+  866  @push
+  867  motive && front
+  868  code .
+  869  @dev
+  870  motive && back
+  871  @dev
+  872  clear
+  873  @checkout dev
+  874  @pull
+  875  @dev
+  876  clear
+  877  code .
+  878  @dv
+  879  @dev
+  880  @status
+  881  @pop
+  882  @status
+  883  @stash
+  884  git fetch && git checkout GDL-683-bugfix-bhaitems-refactor
+  885  ssh-add ~/.ssh/md_rsa
+  886  git fetch && git checkout GDL-683-bugfix-bhaitems-refactor
+  887  @pop
+  888  @commit "GDL-683 #time 2h #comment Empty State for Slide Report"
+  889  @push
+  890  @commit "GDL-683 #time 2h #comment Empty State for BHA/BHA Items"
+  891  @push
+  892  mongo
+  893  @migrate
+  894  clear
+  895  motive && back
+  896  @dev
+  897  @migrate
+  898  @dev
+  899  mongo
+  900  motive && back
+  901  @migrate
+  902  code .
+  903  @migrate
+  904  code .
+  905  @pull
+  906  @status
+  907  git reset --hard
+  908  @pull
+  909  @checkout GDL-639-BugFix-muddata 
+  910  @pull
+  911  @migrate
+  912  motive && front
+  913  @commit "GDL-683 #time 2d #commit Fix BHA Items"
+  914  @push
+  915  @checkout GDL-683-BugFix-bha-tools 
+  916  @pull
+  917  code .
+  918  @migrate
+  919  @status
+  920  git reset --hard
+  921  @push
+  922  @commit "GDL-683 #time 2h #commit Fix BHA Items - Update"
+  923  @push
+  924  @commit "HOST"
+  925  @push
+  926  @commit "Remove console logs"
+  927  @push
+  928  clear
+  929  @commit "GDL-683 #time 2h #commit Fix BHA Items - Improvements"
+  930  @push
+  931  @commit "GDL-683 #time 15m #commit Fix BHA Items - Prevent Console Errors"
+  932  @push
+  933  @migrate
+  934  "status\n\n¨\n\n\n"
+  935  @statu
+  936  s@status
+  937  @status
+  938  clear
+  939  @stash
+  940  @pull
+  941  @fetch
+  942  @checkout GDL-660-US-DR-create-a-confirm-action
+  943  clear
+  944  @pop
+  945  @commit "GDL-660 #time 30m #comment Improvements on Callbacks"
+  946  @push
+  947  @status
+  948  @checkout dev
+  949  @pull
+  950  @checkout GDL-683-bugfix-bhaitems-refactor 
+  951  @rebase origin/dev-directional-reports 
+  952  @checkout dev
+  953  @status
+  954  motive && back
+  955  clear
+  956  @checkout dev 
+  957  @status
+  958  git reset --hard
+  959  @checkout dev
+  960  @pull
+  961  clear
+  962  @migrate
+  963  @commit "GDL-683 #time 4h #comment Implements Autocomplete Serial Feature"
+  964  @push
+  965  defaults -currentHost read com.apple.keyboard.modifiermapping
+  966  defaults -currentHost read com.apple.keyboard
+  967  defaults read com.apple.keyboard
+  968  defaults read com.apple
+  969  defaults read
+  970  defaults read com.apple
+  971  defaults com.apple read
+  972  defaults find keyboard
+  973  AppleCurrentKeyboardLayoutInputSourceID
+  974  defaults -currentHost read com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID
+  975  defaults -currentHost read com.apple.HIToolbox
+  976  defaults read com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID
+  977  defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.Spanish-ISO
+  978  defaults read com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID
+  979  killall -KILL Finder
+  980  defaults read com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID
+  981  defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.Spanish-ISO
+  982  defaults write /Library/Preferences/com.apple.HIToolbox AppleDefaultAsciiInputSource -dict InputSourceKind "Keyboard Layout" "KeyboardLayout ID" -int 87 "KeyboardLayout Name" Spanish - ISO
+  983  defaults write /com.apple.HIToolbox AppleDefaultAsciiInputSource -dict InputSourceKind "Keyboard Layout" "KeyboardLayout ID" -int 87 "KeyboardLayout Name" Spanish - ISO
+  984  defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.Spanish-ISO
+  985  defaults write com.apple.HIToolbox AppleDefaultAsciiInputSource -dict InputSourceKind "Keyboard Layout" "KeyboardLayout ID" -int 87 "KeyboardLayout Name" Spanish - ISO
+  986  clear
+  987  defaults write com.apple.HIToolbox AppleDefaultAsciiInputSource -dict InputSourceKind "Keyboard Layout" "KeyboardLayout ID" -int 87 "KeyboardLayout Name" "Spanish - ISO"
+  988  defaults write /Library/Preferences/com.apple.HIToolbox AppleEnabledInputSources -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 87; "KeyboardLayout Name" = "Spanish - ISO"; }'\ndefaults write /Library/Preferences/com.apple.HIToolbox AppleInputSourceHistory -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 87; "KeyboardLayout Name" = "Spanish - ISO"; }'\ndefaults write /Library/Preferences/com.apple.HIToolbox AppleSelectedInputSources -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 87; "KeyboardLayout Name" = "Spanish - ISO"; }'\n 
+  989  killall SystemUIServer
+  990  defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.Spanish-ISO
+  991  killall SystemUIServer
+  992  ~/Library/Preferences/ByHost/
+  993  ls
+  994  ..
+  995  l
+  996  cat com.apple.HIToolbox.plist
+  997  code com.apple.HIToolbox.plist
+  998  killall SystemUIServer
+  999  clear
+ 1000  defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.Spanish-ISO
+ 1001  killall SystemUIServer
+ 1002  defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID -string com.apple.keylayout.Spanish-ISO
+ 1003  killall SystemUIServer
+ 1004  defaults read com.apple.finder QLEnableTextSelection
+ 1005  sudo defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID -string com.apple.keylayout.Spanish-ISO
+ 1006  killall SystemUIServer
+ 1007  sudo defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.Spanish-ISO
+ 1008  killall SystemUIServer
+ 1009  clear
+ 1010  defaults read com.apple.finder QLEnableTextSelection location
+ 1011  defaults delete com.apple.HIToolbox AppleEnabledInputSources
+ 1012  defaults delete ~/Library/Preferences/com.apple.HIToolbox AppleEnabledInputSources
+ 1013  \ndefaults write /Library/Preferences/com.apple.HIToolbox AppleEnabledInputSources -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 0; "KeyboardLayout Name" = "U.S."; }'\ndefaults write /Library/Preferences/com.apple.HIToolbox AppleInputSourceHistory -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 0; "KeyboardLayout Name" = "U.S."; }'\ndefaults write /Library/Preferences/com.apple.HIToolbox AppleSelectedInputSources -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 0; "KeyboardLayout Name" = "U.S."; }'
+ 1014  defaults write ~/Library/Preferences/com.apple.HIToolbox AppleEnabledInputSources -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 87; "KeyboardLayout Name" = "Spanish - ISO"; }'\ndefaults write ~/Library/Preferences/com.apple.HIToolbox AppleInputSourceHistory -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 87; "KeyboardLayout Name" = "Spanish - ISO"; }'\ndefaults write ~/Library/Preferences/com.apple.HIToolbox AppleSelectedInputSources -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 87; "KeyboardLayout Name" = "Spanish - ISO"; }'\n\ndefaults write ~/Library/Preferences/com.apple.HIToolbox AppleEnabledInputSources -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 0; "KeyboardLayout Name" = "U.S."; }'\ndefaults write ~/Library/Preferences/com.apple.HIToolbox AppleInputSourceHistory -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 0; "KeyboardLayout Name" = "U.S."; }'\ndefaults write ~/Library/Preferences/com.apple.HIToolbox AppleSelectedInputSources -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 0; "KeyboardLayout Name" = "U.S."; }'\n
+ 1015  defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.US
+ 1016  sudo defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.US
+ 1017  killall SystemUIServer
+ 1018  sudo defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.US
+ 1019  killall SystemUIServer
+ 1020  defaults write ~/Library/Preferences/com.apple.HIToolbox AppleEnabledInputSources -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 0; "KeyboardLayout Name" = "U.S."; }'\ndefaults write ~/Library/Preferences/com.apple.HIToolbox AppleInputSourceHistory -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 0; "KeyboardLayout Name" = "U.S."; }'\ndefaults write ~/Library/Preferences/com.apple.HIToolbox AppleSelectedInputSources -array '{ InputSourceKind = "Keyboard Layout"; "KeyboardLayout ID" = 0; "KeyboardLayout Name" = "U.S."; }'\n
+ 1021  mv com.apple.HIToolbox com.apple.HIToolbox.old
+ 1022  sudo mv com.apple.HIToolbox com.apple.HIToolbox.old
+ 1023  ls
+ 1024  sudo mv com.apple.HIToolbox.plist com.apple.HIToolbox.plist.old
+ 1025  killall SystemUIServer
+ 1026  defaults delete ~/Library/Preferences/com.apple.HIToolbox AppleEnabledInputSources\n
+ 1027  defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.US
+ 1028  killall SystemUIServer
+ 1029  defaults delete ~/Library/Preferences/com.apple.HIToolbox AppleEnabledInputSourc\n
+ 1030  defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.US
+ 1031  killall SystemUIServer
+ 1032  defaults delete ~/Library/Preferences/com.apple.HIToolbox AppleEnabledInputSources
+ 1033  killall SystemUIServer
+ 1034  mv com.apple.HIToolbox com.apple.HIToolbox.old
+ 1035  mv com.apple.HIToolbox.plist com.apple.HIToolbox.plist..old
+ 1036  clear
+ 1037  sudo defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.Spanish-ISO
+ 1038  killall SystemUIServer
+ 1039  sudo defaults write ~/Library/Preferences/com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID -string com.apple.keylayout.Spanish-ISO
+ 1040  killall SystemUIServer
+ 1041  mv com.apple.HIToolbox.plist com.apple.HIToolbox.plist..old
+ 1042  clear
+ 1043  killall SystemUIServer
+ 1044  showfiles
+ 1045  motive && front
+ 1046  @checkout dev-directional-reports 
+ 1047  @pull
+ 1048  code .
+ 1049  @stash
+ 1050  @pull
+ 1051  @pop
+ 1052  @stash
+ 1053  @pop
+ 1054  @stash
+ 1055  git fetch && git checkout GDL-320-BugFix-listsystem-does-not-display-confirmation
+ 1056  @rebase origin/dev-directional-reports 
+ 1057  @pop
+ 1058  @commit "GDL-320 #time 2h #comment Implements new ConfirmAction component to fix bugs"
+ 1059  @push
+ 1060  @status
+ 1061  @commit "GDL-320 #time 15m #comment Remove unnecesary code"
+ 1062  @commit "HOST"
+ 1063  @push
+ 1064  @commit "GDL-320 #time 30m #comment Change binding type & Implements new design to progress"
+ 1065  @push
+ 1066  @stash
+ 1067  git fetch && git checkout GDL-599-bugfix-listdrill-pipe-modal-not-show
+ 1068  @pop
+ 1069  @commit "GDL-599 #time 30m #comment Fix reference to parent controlle of drill pipes"
+ 1070  @push
+ 1071  ls
+ 1072  motive && front
+ 1073  @status
+ 1074  @checkout dev-directional-reports 
+ 1075  clear
+ 1076  code .
+ 1077  @dev
+ 1078  motive && back
+ 1079  motive && front
+ 1080  clear
+ 1081  motive && back
+ 1082  @dev
+ 1083  motive && back
+ 1084  code .
+ 1085  @pull
+ 1086  @status
+ 1087  @stash
+ 1088  @pull
+ 1089  @pop
+ 1090  @stash
+ 1091  ssh-add ~/.ssh/md_rsa
+ 1092  @pull
+ 1093  @pop
+ 1094  code .
+ 1095  git fetch && git checkout GDL-730-bugfix-invoice-the-taxes-are-updating
+ 1096  @status
+ 1097  @commit "GDL-730 #time 1h #comment Request the latest info of the Job"
+ 1098  @push
+ 1099  @stash
+ 1100  @checkout dev
+ 1101  #
+ 1102  @@dev
+ 1103  @@ dev
+ 1104  $
+ 1105  $ dev
+ 1106  code .
+ 1107  @checkout dev-directional-reports 
+ 1108  @pop
+ 1109  "status\n@\n"
+ 1110  cleqr
+ 1111  clear
+ 1112  @status
+ 1113  git fetch && git checkout GDL-320-bugfix-revert-popup-confirmation-formtable
+ 1114  @pop
+ 1115  @status
+ 1116  ls
+ 1117  git stash drop
+ 1118  @status
+ 1119  @commit "GDL-320 #time 15m #comment Change ConfirmAction by ButtonAction component into FormTable""\n"
+ 1120  @log -n 5
+ 1121  gri b3c2f12b4
+ 1122  gra
+ 1123  functions
+ 1124  aliases
+ 1125  functions
+ 1126  @rs
+ 1127  disable_hooks
+ 1128  gri b3c2f12b4
+ 1129  enable_hooks
+ 1130  aliases
+ 1131  @rs
+ 1132  @dishooks
+ 1133  @enhooks
+ 1134  clea
+ 1135  @clear
+ 1136  clear
+ 1137  @push
+ 1138  @commit "GDL-320 #time 15m #commenFix colors of Job Selector"
+ 1139  @dishooks
+ 1140  @log -n
+ 1141  @log -n 5
+ 1142  gri 850af547d
+ 1143  @push
+ 1144  @enhooks
+ 1145  @checkout dev-directional-reports 
+ 1146  @pull
+ 1147  @stash
+ 1148  @pull
+ 1149  @ull
+ 1150  @pull
+ 1151  @pop
+ 1152  code .
+ 1153  @pull
+ 1154  code .
+ 1155  @pull
+ 1156  git fetch && git checkout GDL-759-bugfix-bhar-filespump-number-is-not-printed
+ 1157  mongo
+ 1158  @migrate
+ 1159  @stash
+ 1160  @pull
+ 1161  @pop
+ 1162  @dev
+ 1163  mongo
+ 1164  @status
+ 1165  @commit "GDL-759 #time 30m #comment Sort BHA Tools"
+ 1166  @rebase origin/dev
+ 1167  @pull
+ 1168  #stash
+ 1169  @stash
+ 1170  @pull
+ 1171  @pop
+ 1172  @dev
+ 1173  @commit "GDL-759 #time 30m #comment Add Pump Number Column to the exportables"
+ 1174  @push
+ 1175  @pull
+ 1176  @stash
+ 1177  @pull
+ 1178  @pop
+ 1179  git fetch && git checkout GDL-767-bugfix-the-line-blow-the-tab-item
+ 1180  code
+ 1181  code .
+ 1182  @commit "GDL-767 #time 15m #comment Fixe the style"
+ 1183  @push
+ 1184  @checkout dev-directional-reports 
+ 1185  git stash drop
+ 1186  git fetch && git checkout GDL-767-bugfix-the-line-blow-the-tab-item
+ 1187  @commit "GDL-767 #time 15m #comment Get Rig of unnecesary host declaration"
+ 1188  @push
+ 1189  @commit "HOST"
+ 1190  @push
+ 1191  @checkout dev
+ 1192  clear
+ 1193  @dev
+ 1194  @pull
+ 1195  @status
+ 1196  @stash
+ 1197  git fetch && git checkout GDL-766-bugfix-fix-tools-clipped-bhareport
+ 1198  @pop
+ 1199  @commit "GDL-766 #time 30m #comment Auto create pages when the tool list is too long"
+ 1200  @push
+ 1201  @commit "GDL-767 #time 15m #comment Get Rig of unnecesary host declaration"
+ 1202  @push
+ 1203  @commit "GDL-767 #time 15m #comment Get Rig of unnecesary host declaration"
+ 1204  @push
+ 1205  @status
+ 1206  @stash
+ 1207  @pop
+ 1208  @stash
+ 1209  git fetch && git checkout GDL-770-bugfix-job-costing-is-disappear
+ 1210  @pop
+ 1211  @commit "GDL-770 #time 30m #comment Reload Cost List after saving"
+ 1212  @push
+ 1213  @commit "GDL-770 #time 30m #comment Remove unnecesary code"
+ 1214  @push
+ 1215  clear
+ 1216  @dev
+ 1217  @status
+ 1218  @stash
+ 1219  git fetch && git checkout GDL-760-bugfix-new-pump-disappear-when-click-on-page
+ 1220  @pop
+ 1221  @status
+ 1222  @commit "GDL-760 #time 30m #comment Hide Alert when click on page"
+ 1223  @push
+ 1224  @checkout dev-directional-reports 
+ 1225  @pull
+ 1226  @checkout dev
+ 1227  @pull
+ 1228  @stash
+ 1229  @pull
+ 1230  @checkout GDL-598-BugFix-GeneralIconIssues 
+ 1231  @pop
+ 1232  @status
+ 1233  git reset --hard
+ 1234  @checkout GDL-598-BugFix-GeneralIconIssues 
+ 1235  @checkout dev-directional-reports 
+ 1236  clear
+ 1237  @pull
+ 1238  git fetch && git checkout GDL-777-create-drillpipe-functionality
+ 1239  motive && back
+ 1240  asd
+ 1241  ad
+ 1242  spotify
+ 1243  motive && back
+ 1244  code .
+ 1245  curl -s --user 'api:YOUR_API_KEY' \\n    https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages \\n    -F from='Excited User <mailgun@YOUR_DOMAIN_NAME>' \\n    -F to=YOU@YOUR_DOMAIN_NAME \\n    -F to=bar@example.com \\n    -F subject='Hello' \\n    -F text='Testing some Mailgun awesomeness!'\ncurl -s --user 'api:YOUR_API_KEY' \\n    https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages \\n    -F from='Excited User <mailgun@YOUR_DOMAIN_NAME>' \\n    -F to=YOU@YOUR_DOMAIN_NAME \\n    -F to=bar@example.com \\n    -F subject='Hello' \\n    -F text='Testing some Mailgun awesomeness!'\n
+ 1246  curl -s --user 'api:Y\n    https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages \\n    -F from='Excited User <mailgun@YOUR_DOMAIN_NAME>' \\n    -F to=YOU@YOUR_DOMAIN_NAME \\n    -F to=bar@example.com \\n    -F subject='Hello' \\n    -F text='Testing some Mailgun awesomeness!'\ncurl -s --user 'api:YOUR_API_KEY' \\n    https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages \\n    -F from='Excited User <mailgun@YOUR_DOMAIN_NAME>' \\n    -F to=YOU@YOUR_DOMAIN_NAME \\n    -F to=bar@example.com \\n    -F subject='Hello' \\n    -F text='Testing some Mailgun awesomeness!'\n\n\n¨\n\n"\n\n2
+ 1247  clear
+ 1248  curl -v --user 'api:YOUR_API_KEY' \\n    https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages \\n    -F from='Excited User <mailgun@YOUR_DOMAIN_NAME>' \\n    -F to=YOU@YOUR_DOMAIN_NAME \\n    -F to=bar@example.com \\n    -F subject='Hello' \\n    -F text='Testing some Mailgun awesomeness!'\n
+ 1249  motive && back
+ 1250  code .
+ 1251  "dev\n"
+ 1252  @dev
+ 1253  motive && front
+ 1254  @dev
+ 1255  git fetch && git checkout GDL-774-bugfix-fileswrong-position-of-the-fields
+ 1256  ssh-add ~/.ssh/md_rsa
+ 1257  git fetch && git checkout GDL-774-bugfix-fileswrong-position-of-the-fields
+ 1258  @dev
+ 1259  clear
+ 1260  @dev
+ 1261  clear
+ 1262  mongo
+ 1263  @dev
+ 1264  motive && back
+ 1265  @migrate
+ 1266  mongo
+ 1267  motive && back
+ 1268  motive && front
+ 1269  @migrate
+ 1270  @status
+ 1271  @commit "GDL-774 #time 30m #comment Stylish Fields"
+ 1272  @push
+ 1273  code .
+ 1274  @migarte
+ 1275  @migrate
+ 1276  @status
+ 1277  @commit "GDL-777 #time 1d #comment Drill Pipe Feature for BHA Items"
+ 1278  @push
+ 1279  @checkout dev
+ 1280  @pull
+ 1281  @checkout dev-directional-reports 
+ 1282  @pull
+ 1283  git fetch && git checkout GDL-776-bugfix-missing-spinner
+ 1284  git fetch && git checkout GDL-792-us-bha-mud-motor-refinement
+ 1285  git push -u
+ 1286  git push --force -u
+ 1287  git fetch && git checkout GDL-793-create-migrations
+ 1288  code .
+ 1289  @commit "GDL-793 #time 30m #comment Seed for dropdowns options"
+ 1290  @commit "GDL-793 #time 15m #comment Migration Config"
+ 1291  @push
+ 1292  code .
+ 1293  @commit "GDL-793 #time 15m #comment Schema for BhaOptions"
+ 1294  @push
+ 1295  @pull
+ 1296  @migrate
+ 1297  @install
+ 1298  @migrate
+ 1299  npm rebuild
+ 1300  xcode-select --install
+ 1301  @commit "GDL-793 #time 15m #comment Implements migrations"
+ 1302  @push
+ 1303  @migrate
+ 1304  @commit "GDL-793 #time 15m #comment Fix typos"
+ 1305  @push
+ 1306  @migrate
+ 1307  @commit "GDL-793 #time 15m #comment Use API to make migrations"
+ 1308  @push
+ 1309  @commit "GDL-793 #time 15m #comment Use API to make migrations"
+ 1310  @push
+ 1311  @commit "GDL-793 #time 15m #comment Typo"
+ 1312  @push
+ 1313  @commit "GDL-793 #time 15m #comment Log errors"
+ 1314  @push
+ 1315  xcode-select --install
+ 1316  @migrate
+ 1317  nvm use v8
+ 1318  @migrate
+ 1319  @pull
+ 1320  @migrate
+ 1321  @commit "GDL-793 #time 15m #comment Fixes"
+ 1322  "push\n"
+ 1323  @push
+ 1324  @commit "GDL-793 #time 15m #comment reenable toolsGroups migrations"
+ 1325  @push
+ 1326  motive && front
+ 1327  motive && back
+ 1328  @checkout dev
+ 1329  @checkout dev-directional-reports 
+ 1330  @checkout gdl-776
+ 1331  @checkout GDL-776-bugfix-missing-spinner 
+ 1332  clear
+ 1333  @rebase origin/dev
+ 1334  @status
+ 1335  @stash
+ 1336  @rebase origin/dev
+ 1337  gra
+ 1338  @checkout GDL-776-bugfix-missing-spinner 
+ 1339  @rebase origin/dev-directional-reports 
+ 1340  @pull
+ 1341  clear
+ 1342  @pop
+ 1343  code .
+ 1344  @dev
+ 1345  @pull
+ 1346  ssh-add ~/.ssh/md_rsa
+ 1347  @pull
+ 1348  @dev
+ 1349  @status
+ 1350  @commit "GDL-776 #time 1d #comment Loading state for Typeaheads"
+ 1351  @push
+ 1352  @commit "HOST"
+ 1353  @push
+ 1354  @commit "HOST"
+ 1355  @push
+ 1356  git fetch && git checkout GDL-200-bugfix-daily-styling
+ 1357  @stash
+ 1358  @rebase origin/dev-directional-reports 
+ 1359  @pop
+ 1360  @status
+ 1361  @commit "GDL-200 #time 30m #comment Text & Icons Styles for Daily Tab"
+ 1362  @push
+ 1363  @checkout GDL-776-bugfix-missing-spinner 
+ 1364  @commit "Get rid of empty div"
+ 1365  @push
+ 1366  localhost
+ 1367  ls
+ 1368  qtxpress
+ 1369  code .
+ 1370  @serve
+ 1371  motive && front
+ 1372  code .
+ 1373  @checkout dev-directional-reports 
+ 1374  @pull
+ 1375  @dev
+ 1376  motive && back
+ 1377  @dev
+ 1378  @pull
+ 1379  code .
+ 1380  @dev
+ 1381  @pull
+ 1382  @status
+ 1383  @stash
+ 1384  git fetch && git checkout GDL-774-bugfix-new-order-and-fixes
+ 1385  @pop
+ 1386  @status
+ 1387  @commit "GDL-774 #time 4h #comment New Ordering & Syle Fixes"
+ 1388  @push
+ 1389  motive && front
+ 1390  code .
+ 1391  @checkout GDL-794-refinement-for-bit-data 
+ 1392  motive && back
+ 1393  @checkout GDL-794-bugFix-bit-data 
+ 1394  @migrate
+ 1395  mongo
+ 1396  @dev
+ 1397  code .
+ 1398  @pull
+ 1399  @status
+ 1400  @commit "GDL-794 #time 1h #comment DrComponent"
+ 1401  @push
+ 1402  code .
+ 1403  @checkout dev-directional-reports 
+ 1404  @pull
+ 1405  @status
+ 1406  git stash drop
+ 1407  @checkout GDL-794-refinement-for-bit-data 
+ 1408  @status
+ 1409  git reset --hard
+ 1410  @checkout GDL-794-refinement-for-bit-data 
+ 1411  @push
+ 1412  git fetch && git checkout GDL-809-bugfix-directionalreports-is-pointer-to-wrong-host
+ 1413  @status
+ 1414  @commit "GDL-809 #time 10m #comment DirectionalReports is now pointing to the correct host"
+ 1415  @push
+ 1416  @dev
+ 1417  motive && front
+ 1418  @pull
+ 1419  @checkout dev-directional-reports 
+ 1420  @pull
+ 1421  code .
+ 1422  motive && back
+ 1423  @checkout dev
+ 1424  @pull
+ 1425  clear
+ 1426  git fetch && git checkout GDL-774-bugfix-fileswrong-position-of-the-fields-excel
+ 1427  clear
+ 1428  open .
+ 1429  cod e.
+ 1430  code .
+ 1431  @status
+ 1432  @commit "GDL-774 #time 1h #comment Reorder Excel for BHA Individual Report"
+ 1433  @push
+ 1434  motive && back
+ 1435  motive && front
+ 1436  code .
+ 1437  @commit "GDL-774 #time 1h #comment Typo Fix"
+ 1438  @push
+ 1439  @commit "GDL-774 #time 1h #comment Move Migration host into the ENV Vars"
+ 1440  @push
+ 1441  @checkout dev
+ 1442  @pull
+ 1443  git fetch && git checkout GDL-776-dr-bugfix-spinner-never-ends
+ 1444  @status
+ 1445  @stash
+ 1446  git fetch && git checkout GDL-776-dr-bugfix-spinner-never-ends
+ 1447  @pop
+ 1448  @commit "GDL-776 #time 4h #comment Sync Typeaheads of BHA Items"
+ 1449  @push
+ 1450  @commit "GDL-776 #time 4h #comment Styling Spinners for Typeaheads"
+ 1451  @push
+ 1452  @log -n 5
+ 1453  gri 31d03fefe
+ 1454  @commit "HOST"
+ 1455  gri 31d03fefe
+ 1456  @push
+ 1457  @pull
+ 1458  motive && back
+ 1459  open .
+ 1460  code .
+ 1461  git fetch
+ 1462  @checkout GDL-828-bugfix-pump-data 
+ 1463  @commit "GDL-828 #time 1h #comment Displays Output from Pumps at Exportables"
+ 1464  @commit "GDL-828 #time 1h #comment Type"
+ 1465  @push
+ 1466  @checkout GDL-812-bugfix-cost-estimation 
+ 1467  @pull
+ 1468  motive && front
+ 1469  code .
+ 1470  @status
+ 1471  git reset --hard
+ 1472  @fetch
+ 1473  @checkout GDL-827-bugfix-motor 
+ 1474  @pull
+ 1475  @commit "GDL-827 #time 15m #comment Disable Undo Flag on FormGrid Component"
+ 1476  @push
+ 1477  motive && back
+ 1478  code .
+ 1479  @checkout dev
+ 1480  clear
+ 1481  git fetch && git checkout GDL-816-bugfix-rnot-printed-or-wron
+ 1482  clear
+ 1483  git fetch && git checkout GDL-816-bugfix-rnot-printed-or-wron
+ 1484  git fetch && git checkout GDL-816-bugfix-rnot-printed-or-wrong
+ 1485  clear
+ 1486  motive && front
+ 1487  code .
+ 1488  @status
+ 1489  @diff
+ 1490  @commit "GDL-816 #time 15m #comment Fix Typo"
+ 1491  @push
+ 1492  code .
+ 1493  @commit "GDL-816 #time 15m #comment Wrap Text & Round Decimals"
+ 1494  @push
+ 1495  sudo gem install cocoapods
+ 1496  localhost
+ 1497  ..
+ 1498  ls
+ 1499  projects
+ 1500  ls
+ 1501  ios
+ 1502  ls
+ 1503  testapp
+ 1504  po init
+ 1505  pod init
+ 1506  vars
+ 1507  @rs
+ 1508  cler
+ 1509  clear
+ 1510  pod init
+ 1511  open -a Xcode Podfile
+ 1512  pod install
+ 1513  vars
+ 1514  profile
+ 1515  @rs
+ 1516  open .
+ 1517  motive && front
+ 1518  code .
+ 1519  motive && front
+ 1520  ssh-add ~/.ssh/md_rsa
+ 1521  code ,
+ 1522  @deb
+ 1523  @dev
+ 1524  motive && back
+ 1525  @dev
+ 1526  motive && front
+ 1527  code .
+ 1528  @status
+ 1529  @stash
+ 1530  @checkout dev-directional-reports 
+ 1531  @pull
+ 1532  git fetch && git checkout GDL-823-bugfix-required-fields-not-ma
+ 1533  @pop
+ 1534  @commit "GDL-823 #time 1h #comment Comments Casing Fixes"
+ 1535  @push
+ 1536  @commit "HOST"
+ 1537  @log -n 5
+ 1538  gri 3fd3e13d9
+ 1539  @push
+ 1540  @commit "Remove unnecesary code"
+ 1541  @push
+ 1542  motive && back
+ 1543  @checkout dev
+ 1544  @pull
+ 1545  code .
+ 1546  @stash
+ 1547  git fetch && git checkout GDL-826-bugfix-daily-reportdate-in-general
+ 1548  @pop
+ 1549  @commit "GDL-826 #time 30m #comment Increase spaces between columns"
+ 1550  @push
+ 1551  @fetch
+ 1552  motive && front
+ 1553  @fetch
+ 1554  @checkout GDL-825-fetmotor-rundo-button-does-not-d 
+ 1555  clear
+ 1556  @pull
+ 1557  @stash
+ 1558  @pull
+ 1559  @pop
+ 1560  clear
+ 1561  code .
+ 1562  screenfetch
+ 1563  motive && back
+ 1564  code .
+ 1565  @checkout dev
+ 1566  @pull
+ 1567  git fetch && git checkout GDL-774-bugfix-remove-duplicated-field
+ 1568  @commit "GDL-774 #time 10m #comment Get Rig of Duplicated Field"
+ 1569  @push
+ 1570  @checkout dev-directional-reports 
+ 1571  @stash
+ 1572  @pull
+ 1573  @pop
+ 1574  git fetch && git checkout GDL-833-bugfix-implements-drcollapse-into-motordata
+ 1575  @commit "GDL-833 #time 10m #comment Implements DrCollapse into MotorData"
+ 1576  @push
+ 1577  $EDITOR
+ 1578  localhost
+ 1579  git@github.com:dannegm/HELLOSOCKET.git
+ 1580  git clone git@github.com:dannegm/HELLOSOCKET.git
+ 1581  cp .env.example .env && $EDITOR .env
+ 1582  ls
+ 1583  hellosocket
+ 1584  cp .env.example .env && $EDITOR .env
+ 1585  clear
+ 1586  ls
+ 1587  ls -la
+ 1588  npm install && npm run dev
+ 1589  cp .env.example .env && $EDITOR .env
+ 1590  "dev\n"
+ 1591  clear
+ 1592  @dev
+ 1593  motive && back
+ 1594  code .
+ 1595  cp .env.example .env && $EDITOR .env
+ 1596  clear
+ 1597  @dev
+ 1598  code .
+ 1599  @dev
+ 1600  code .
+ 1601  clear
+ 1602  @commit "Scheme Engine Implements & Mongoose Updates"
+ 1603  @push
+ 1604  @dev
+ 1605  motive && back
+ 1606  motive && front
+ 1607  code .
+ 1608  @dev
+ 1609  @checkout dev
+ 1610  @deb
+ 1611  code .
+ 1612  @dev
+ 1613  motive && back
+ 1614  git fetch && git checkout GDL-842-bugfix-list-rerror-tooltips-doe
+ 1615  @commit "GDL-833 #time 1h #commit Hide Notifications Errors when onBlur event"
+ 1616  @commit "HOST"
+ 1617  @log -n 5
+ 1618  gri 0671258c5
+ 1619  @push
+ 1620  ssh-add ~/.ssh/md_rsa
+ 1621  @push
+ 1622  git fetch && git checkout GDL-842-bugfix-list-rerror-tooltips-doe
+ 1623  @commit "GDL-842 #time 1h #commit Hide Notifications Errors when onBlur event"
+ 1624  @push
+ 1625  @commit "GDL-842 #time 5m #commit Rename onBlur event"
+ 1626  @push
+ 1627  @commit "GDL-842 #time 5m #commit Rename onBlur event"
+ 1628  @push
+ 1629  @diff
+ 1630  @stash
+ 1631  git fetch && git checkout GDL-842-fettool-list-rerror-tooltips-doe
+ 1632  @pop
+ 1633  @commit "GDL-842 #time 10m #comment OnBlur & OnFocus Event for Typeahead"
+ 1634  @push
+ 1635  motive && back
+ 1636  code .
+ 1637  ..
+ 1638  ls
+ 1639  projects
+ 1640  git clone git@github.com:WhatsApp/stickers.git
+ 1641  ls
+ 1642  ios
+ 1643  open .
+ 1644  localhost
+ 1645  ls
+ 1646  qtxpress
+ 1647  ls
+ 1648  clear
+ 1649  code .
+ 1650  ..
+ 1651  vue create login
+ 1652  npm install -g @vue/cli
+ 1653  sudo npm install -g @vue/cli
+ 1654  ..
+ 1655  vue create vuex-search
+ 1656  vuex-search
+ 1657  code .
+ 1658  @serve
+ 1659  localhost
+ 1660  motive
+ 1661  ls
+ 1662  git clone git@bitbucket.org:surfacesteerable/singleview-spikes.git
+ 1663  ifconfig
+ 1664  git fetch && git checkout VueJS
+ 1665  ls
+ 1666  singleview-spikes
+ 1667  git fetch && git checkout VueJS
+ 1668  cd ..
+ 1669  vue create ex
+ 1670  localhost
+ 1671  ls
+ 1672  HELLOSOCKET
+ 1673  npm install passport -s
+ 1674  code .
+ 1675  npm install passport-google-oauth -s
+ 1676  @dev
+ 1677  @status
+ 1678  @commit "Login with Google supports by Passport"
+ 1679  @push
+ 1680  npm install mongoose -s
+ 1681  npm install connect-mongo -s
+ 1682  @dev
+ 1683  clear
+ 1684  @dev
+ 1685  @commit "UserSchema"
+ 1686  @push
+ 1687  @commit "UserSchema"
+ 1688  @push
+ 1689  @dev
+ 1690  @commit "Super Fixes"
+ 1691  @push
+ 1692  npm install mailgun-js -s
+ 1693  @commit "Mailgun Support"
+ 1694  ..
+ 1695  ls
+ 1696  qtxpress
+ 1697  code .
+ 1698  @commit "Mailgun Credentials"
+ 1699  git remote add tacoclone git@github.com:GarnachaSoft/TacoMS.git
+ 1700  git push tacoclone master
+ 1701  ..
+ 1702  git clone git@github.com:GarnachaSoft/TacoMS.git
+ 1703  tacoms
+ 1704  ls
+ 1705  ..
+ 1706  ls
+ 1707  tacoms
+ 1708  code .
+ 1709  @commit "Update Readme"
+ 1710  @push
+ 1711  ..
+ 1712  HELLOSOCKET
+ 1713  cat .env
+ 1714  monngo -v
+ 1715  mongo
+ 1716  @commit "Update Readme"
+ 1717  @push
+ 1718  npm install
+ 1719  @dev
+ 1720  @commit "Update package.json"
+ 1721  @push
+ 1722  motive && back
+ 1723  code .
+ 1724  @dev
+ 1725  @commit "Schemas"
+ 1726  @push
+ 1727  npm install passport-http-bearer
+ 1728  npm install passport-http-bearer -s
+ 1729  @dev
+ 1730  clear
+ 1731  @dev
+ 1732  clear
+ 1733  @diff
+ 1734  @commit "Bearer authentication"
+ 1735  @push
+ 1736  @dev
+ 1737  clear
+ 1738  mongo
+ 1739  @dev
+ 1740  mongo
+ 1741  @commit "Bearer Fixes"
+ 1742  @push
+ 1743  @commit "Fixes"
+ 1744  @push
+ 1745  motive && back
+ 1746  ..
+ 1747  ls
+ 1748  sudo npm install -g @angular/cli
+ 1749  ng -v
+ 1750  ng new ccdashboard
+ 1751  yarn
+ 1752  npm install -s @ngrx/store
+ 1753  code .
+ 1754  ccdashboard
+ 1755  np -v
+ 1756  ng -v
+ 1757  clear
+ 1758  code .
+ 1759  @serve
+ 1760  ssh root@178.128.147.28
+ 1761  ssh dannegm@178.128.147.28
+ 1762  localhost
+ 1763  take amini
+ 1764  code .
+ 1765  serve .
+ 1766  localhost && amini
+ 1767  wget
+ 1768  wget -r -p -U Mozilla https://amini.com/
+ 1769  ls
+ 1770  wget -r -p -U Mozilla https://amini.com/ > amini
+ 1771  ls
+ 1772  car amini
+ 1773  cat amini
+ 1774  cd amini
+ 1775  firebase init
+ 1776  clear
+ 1777  dist
+ 1778  serve .
+ 1779  wget -r https://amini.com/images/
+ 1780  ls
+ 1781  wget -r http://amini.com/images/
+ 1782  ls
+ 1783  firebase deploy
+ 1784  @rs
+ 1785  firebase deploy
+ 1786  ..
+ 1787  motive
+ 1788  ls
+ 1789  rm ccdashboard
+ 1790  ls
+ 1791  rm node_modules
+ 1792  sudo rm -r node_modules
+ 1793  sudo rm -r ccdashboard
+ 1794  sudo rm -r singleview-spikes
+ 1795  sudo rm package-lock.json
+ 1796  ls
+ 1797  sudo rm -r ex
+ 1798  git clone git@bitbucket.org:surfacesteerable/mdt-cc-dashboard.git
+ 1799  ssh dannegm@178.128.147.28
+ 1800  ssh-add ~/.ssh/md_rsa
+ 1801  git clone git@bitbucket.org:surfacesteerable/mdt-cc-dashboard.git
+ 1802  ls
+ 1803  mv mdt-cc-dashboard cc
+ 1804  cc
+ 1805  ls
+ 1806  cc
+ 1807  motive && cc
+ 1808  mv cc ccd
+ 1809  ccd
+ 1810  ..
+ 1811  motive && ccd
+ 1812  clear
+ 1813  ls
+ 1814  npm install
+ 1815  @dev
+ 1816  motive && ccd
+ 1817  code .
+ 1818  localhost
+ 1819  take victoria
+ 1820  code .
+ 1821  open .
+ 1822  @serve .
+ 1823  serve .
+ 1824  localhost && victoria
+ 1825  ls
+ 1826  clear
+ 1827  firebase init
+ 1828  firebase deploy
+ 1829  dist
+ 1830  serve .
+ 1831  open .
+ 1832  firebase deploy
+ 1833  open .
+ 1834  firebase deploy
+ 1835  motive && ccd
+ 1836  git fetch && git checkout GDCD-16-create-documentation-playgroung
+ 1837  code .
+ 1838  @dev
+ 1839  localhost
+ 1840  ls
+ 1841  victoria
+ 1842  ls
+ 1843  code .
+ 1844  localhost && victoria
+ 1845  serve ./dist
+ 1846  localhost && victoria
+ 1847  firebase deploy
+ 1848  motive && front
+ 1849  open .
+ 1850  code .
+ 1851  open .
+ 1852  motive && ccd
+ 1853  open .
+ 1854  @commit "GDCD-16 #time 6h #comment Initial Setup: Login, Dashboard, Playground"
+ 1855  @push
+ 1856  @commit "GDCD-16 #time 15m #comment Initial Setup: LoginModule"
+ 1857  @push
+ 1858  @log -n 5
+ 1859  gri 55c1f21
+ 1860  @push
+ 1861  @log -n 10
+ 1862  motive && front
+ 1863  code .
+ 1864  opden .
+ 1865  open .
+ 1866  code .
+ 1867  cat /Users/developer/Desktop/localhost/motive/ccd/src/templates/login.html
+ 1868  @dev
+ 1869  clear
+ 1870  open .
+ 1871  @dev
+ 1872  clear
+ 1873  @dev
+ 1874  clear
+ 1875  @dev
+ 1876  @commit "GDCD-16 #time 8h #comment Basics Components"
+ 1877  @push
+ 1878  @log -n 10
+ 1879  aliases
+ 1880  clear
+ 1881  functions
+ 1882  aliases
+ 1883  functions
+ 1884  aliases
+ 1885  clear
+ 1886  @checkout GDCD-15-Task-extended-setup 
+ 1887  @pull
+ 1888  clear
+ 1889  npm install
+ 1890  @dev
+ 1891  clear
+ 1892  @checkout dev
+ 1893  @pull
+ 1894  git fetch && git checkout GDCD-11-card-component
+ 1895  opwn .
+ 1896  open .
+ 1897  ssh dannegm@178.128.147.28
+ 1898  code .
+ 1899  @rs
+ 1900  git commit -m "GDCD-11 #time 6h #comment Playground Improvements, Column CSS & CardPlaceholder Component"
+ 1901  @push
+ 1902  git push origin HEAD -f
+ 1903  cd ..
+ 1904  git commit -m "GDCD-11 #time 6h #comment Playground Improvements, Column CSS & CardPlaceholder Component"
+ 1905  git add .
+ 1906  git commit -m "GDCD-11 #time 6h #comment Playground Improvements, Column CSS & CardPlaceholder Component"
+ 1907  git add .
+ 1908  git commit -m "GDCD-11 #time 6h #comment Playground Improvements, Column CSS & CardPlaceholder Component"
+ 1909  git push origin HEAD -f
+ 1910  clear
+ 1911  git add .
+ 1912  git commit -m "GDCD-11 #time 6h #comment Card Components & Documentation"
+ 1913  git push origin HEAD -f
+ 1914  git commit -m "GDCD-11 #time 15m #comment Comments Fixes"
+ 1915  git add .
+ 1916  git commit -m "GDCD-11 #time 15m #comment Comments Fixes"
+ 1917  git add .
+ 1918  git commit -m "GDCD-11 #time 15m #comment Comments Fixes"
+ 1919  git push origin HEAD -f
+ 1920  git commit -m "GDCD-11 #time 15m #comment Typo Fixes"
+ 1921  git add .
+ 1922  git commit -m "GDCD-11 #time 15m #comment Typo Fixes"
+ 1923  git push origin HEAD -f
+ 1924  code .
+ 1925  clear
+ 1926  git status
+ 1927  open .
+ 1928  code .
+ 1929  @dev
+ 1930  git status
+ 1931  @stash
+ 1932  clear
+ 1933  @checkout dev
+ 1934  @pull
+ 1935  git fetch && git checkout GDCD-22-create-login-screen
+ 1936  @rebase origin/deb
+ 1937  @rebase origin/dev
+ 1938  @pop
+ 1939  git add .
+ 1940  git commit -m "GCDC-22 #time 6h #comment Create Login Screen"
+ 1941  git add .
+ 1942  git commit -m "GCDC-22 #time 6h #comment Create Login Screen"
+ 1943  git push origin HEAD -f
+ 1944  localhos
+ 1945  localhost
+ 1946  ls
+ 1947  victoria
+ 1948  localhost 
+ 1949  ls
+ 1950  amini
+ 1951  code .
+ 1952  serve ./dist -p 5001
+ 1953  serve ./dist -p 5052
+ 1954  cd desktop/localhost/victoria
+ 1955  open .
+ 1956  cd desktop/localhost/amini
+ 1957  open .
+ 1958  firebase deploy
+ 1959  motive && ccd
+ 1960  clear
+ 1961  @checkout
+ 1962  @checkout dev
+ 1963  @pull
+ 1964  code .
+ 1965  @dev
+ 1966  ..
+ 1967  ls
+ 1968  code qtxpress
+ 1969  victoria
+ 1970  firebase deploy
+ 1971  motive && front
+ 1972  code .
+ 1973  @dev
+ 1974  motive && back
+ 1975  @dev
+ 1976  motive && front
+ 1977  code ,
+ 1978  code .
+ 1979  @dev
+ 1980  ssh main@dnn.one
+ 1981  ssh dannegm@dnn.one
+ 1982  motive && ccd
+ 1983  clear
+ 1984  git fetch
+ 1985  ls
+ 1986  @checkout GDCD-14-Task-BasicArchitecture-DropDownComponent
+ 1987  @pull
+ 1988  @status
+ 1989  @stash
+ 1990  @pull
+ 1991  @rebase origin/dev
+ 1992  code .
+ 1993  ga
+ 1994  grc
+ 1995  @dev
+ 1996  npm install
+ 1997  @dev
+ 1998  clear
+ 1999  npm rebuild
+ 2000  npm install
+ 2001  @dev
+ 2002  code .
+ 2003  ...
+ 2004  galerias-victoria
+ 2005  ls
+ 2006  code .
+ 2007  @serve
+ 2008  npm install -s jquery
+ 2009  localhost
+ 2010  qt
+ 2011  qtxpress
+ 2012  code .
+ 2013  npm install blowup -s
+ 2014  motive && ccd
+ 2015  @dev
+ 2016  @pull
+ 2017  @status
+ 2018  git reset --hard
+ 2019  @pull
+ 2020  code .
+ 2021  gra
+ 2022  @checkout dev
+ 2023  git branch -D GDCD-14-Task-BasicArchitecture-DropDownComponent
+ 2024  git fetch
+ 2025  git checkout GDCD-14-Task-BasicArchitecture-DropDownComponent
+ 2026  @pull
+ 2027  @dev
+ 2028  git status
+ 2029  git reset --hard
+ 2030  git fetch && git checkout GDCD-24-bugfix-log-in-fixes
+ 2031  @pop
+ 2032  @diff
+ 2033  clear
+ 2034  open .
+ 2035  git status
+ 2036  aliases
+ 2037  @rs
+ 2038  aliases
+ 2039  @rs
+ 2040  clear
+ 2041  @commit "GDCD-24 #time 4h #comment Login Fixes & Navbar Improvements"
+ 2042  @commit
+ 2043  aliases
+ 2044  @rs
+ 2045  @commit "GDCD-24 #time 4h #comment Login Fixes & Navbar Improvements"
+ 2046  @push
+ 2047  @commit "GDCD-24 #time 10m #comment Remove unneeded library"
+ 2048  @push
+ 2049  @commit "GDCD-24 #time 10m #comment Fix favicon route"
+ 2050  @push
+ 2051  motive && back
+ 2052  cat .env
+ 2053  @commit "GDCD-24 #time 10m #comment Remove unnecesary prefixes"
+ 2054  @push
+ 2055  @commit "GDCD-24 #time 10m #comment Fix Typo"
+ 2056  @push
+ 2057  ...
+ 2058  ls
+ 2059  sudo rm -R dnn-setup
+ 2060  clear
+ 2061  git clone git@github.com:dannegm/dnn-setup.git
+ 2062  dnn-setup
+ 2063  ls
+ 2064  clear
+ 2065  ls
+ 2066  code .
+ 2067  profile
+ 2068  vars
+ 2069  functions
+ 2070  colors
+ 2071  aliases
+ 2072  cat ~/.colors
+ 2073  cat ~/.aliases
+ 2074  sudo ./install sh
+ 2075  ls -la
+ 2076  sudo ./install.sh
+ 2077  sudo sh ./install.sh
+ 2078  clear
+ 2079  code --list-extensions | xargs -L 1 echo code --install-extension
+ 2080  history 0

@@ -20,8 +20,8 @@ alias search='grep -Rin -A 3 -B 3 -E --color=auto'
 alias etc='/usr/local/etc/'
 alias localhost='cd ~/desktop/localhost'
 alias motive='cd ~/desktop/localhost/motive'
-alias front='cd ./dashboard'
-alias back='cd ./mdt-api-directional-reports'
+#alias front='cd ./dashboard'
+#alias back='cd ./mdt-api-directional-reports'
 
 # SSH
 
@@ -45,11 +45,12 @@ alias @e2e='npm run e2e'
 alias @migrate='npm run migrate'
 alias @serve='npm run serve'
 alias @build='npm run build'
+alias @deploy='npm run deploy'
 
 # GIT
 
 alias ga='git add -A'
-alias gc='git commit -m --no-verify'
+alias gc='git commit -m'
 alias gri='git rebase -i'
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
@@ -57,14 +58,20 @@ alias grs='git rebase --skip'
 
 alias @status='git status'
 alias @log='git log --oneline'
-alias @commit='ga & gc'
+#alias @commit='custom_commit'
+alias @commit='git add . && git commit -m'
 alias @checkout='git checkout'
 alias @fetch='git fetch --all'
-alias @push='git push origin HEAD -f --no-verify'
+#alias @push='custom_push'
+alias @push='git push origin HEAD -f'
 alias @pull='git pull --rebase'
 alias @stash='git stash'
+alias @pop='git stash pop'
 alias @rebase='git rebase'
+alias @diff='git diff'
 
+alias @enhooks='enable_hooks'
+alias @dishooks='disable_hooks'
 
 # PHP
 alias php='/Applications/MAMP/bin/php/php7.1.6/bin/php -c "/Library/Application Support/appsolute/MAMP PRO/conf/php7.1.6.ini"'
