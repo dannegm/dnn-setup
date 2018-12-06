@@ -8,6 +8,9 @@ alias functions='nano ~/.functions'
 alias @rs='exec ${SHELL} -l'
 alias @reload='reload_source'
 
+alias @dir='dir'
+alias @ls='ls -la'
+
 # Tools
 
 alias subl='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'

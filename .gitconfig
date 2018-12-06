@@ -1,0 +1,6 @@
+[core]
+	editor = nano
+	pager = cat
+[user]
+	name = dannegm
+	email = dannegm@gmail.com

@@ -1,26 +1,30 @@
 # Utils Functions
 
 function reload_source {
-  source "~/.$1"
+    source "~/.$1"
 }
 
 function custom_commit {
-  if [ -d "./.git/hooks" ]; then
-    git add -A && git commit -m "$1" --no-verify
-  else
-    git add -A && git commit -m "$1"
-  fi
+    if [ -d "./.git/hooks" ]; then
+        git add -A && git commit -m "$1" --no-verify
+    else
+        git add -A && git commit -m "$1"
+    fi
 }
 function custom_push {
-  if [ -d "./.git/hooks" ]; then
-    git push origin HEAD -f --no-verify
-  else
-    git push origin HEAD -f
-  fi
+    if [ -d "./.git/hooks" ]; then
+        git push origin HEAD -f --no-verify
+    else
+        git push origin HEAD -f
+    fi
 }
 function disable_hooks {
-  mv ./.git/hooks ./.git/hooks.disable
+    mv ./.git/hooks ./.git/hooks.disable
 }
 function enable_hooks {
-  mv ./.git/hooks.disable ./.git/hooks
+    mv ./.git/hooks.disable ./.git/hooks
+}
+
+function dir {
+    echo "➜ $blueBold $PWD $reset"
 }
