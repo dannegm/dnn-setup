@@ -54,7 +54,7 @@ git_configs=(
 
 # List of Mac Default Confings
 mac_defaults_configs=(
-    "com.apple.screencapture location ~/Desktop/Screenshots"
+    "com.apple.screencapture location ${HOME}/Desktop/Screenshots"
     "com.apple.finder QLEnableTextSelection -bool true"
     "com.apple.desktopservices DSDontWriteNetworkStores -bool true"
     "com.apple.desktopservices DSDontWriteUSBStores -bool true"
@@ -122,6 +122,7 @@ function grant_access {
 # Prompt
 function prompt {
     if [[ -z "${CI}" ]]; then
+        echo "\nType $cyanBold \b^C$reset to cancel: $blueBold"
         read -p "🖥  $blue $1 ...$reset"
     fi
 }
@@ -285,11 +286,16 @@ function install_nvm {
 function setup_mac_defaults {
     clear
     prompt "Setup Mac Defaults"
+
+    mkdir "${HOME}/Desktop/Screenshots"
+    mkdir -p /data/db
+
     for config in "${mac_defaults_configs[@]}"
     do
-        sudo defaults write ${config}
+        defaults write $config
     done
     killall Finder
+    killall SystemUIServer
 }
 
 # 6) Install Visual Studio Code Extensions
@@ -354,6 +360,7 @@ function final_setup {
     chsh -s /usr/local/bin/zsh
     sudo chown $WHO:staff $HISTFILE
     sudo chown $WHO:staff "${HOME}/.zsh_history"
+    sudo chown $WHO:staff /data/db
     zsh
 
     exec ${SHELL} -l
