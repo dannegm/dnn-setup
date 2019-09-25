@@ -14,6 +14,7 @@ function custom_commit {
 function commit_noverify {
     git add -A && git commit -m "$1" --no-verify
 }
+
 function custom_push {
     if [ -d "./.git/hooks" ]; then
         git push origin HEAD -f --no-verify
@@ -21,6 +22,7 @@ function custom_push {
         git push origin HEAD -f
     fi
 }
+
 function disable_hooks {
     mv ./.git/hooks ./.git/hooks.disable
 }

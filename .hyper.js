@@ -37,10 +37,7 @@ module.exports = {
     env: {},
     bell: 'SOUND',
     copyOnSelect: false,
-    commands: [
-    //  'cd ~/desktop/localhost',
-    //  'clear'
-    ]
+    commands: []
   },
   
   plugins: [
@@ -51,11 +48,7 @@ module.exports = {
     'hyperterm-tab-icons',
     'hyperterm-dibdabs',
     'hyper-chesterish',
-    //'hyper-statusline',
-
     'hyper-spotify',
-    //'hyperpower',
-    //'hyper-cat',
   ],
   localPlugins: [],
   keymaps: {

@@ -18,10 +18,6 @@ alias https='http --default-scheme=https'
 alias img='catimg -w 64'
 alias search='grep -Rin -A 3 -B 3 -E --color=auto'
 
-# SSH
-
-alias ssh-dnn="sshpass -f <(printf '%s\n' ###) ssh root@dnn.im"
-
 # Nginx
 
 alias nxstart='sudo brew services start nginx'
@@ -69,8 +65,3 @@ alias @commit!='commit_noverify'
 
 alias @enhooks='enable_hooks'
 alias @dishooks='disable_hooks'
-
-# PHP
-alias php='/Applications/MAMP/bin/php/php7.1.6/bin/php -c "/Library/Application Support/appsolute/MAMP PRO/conf/php7.1.6.ini"'
-alias pear='/Applications/MAMP/bin/php/php7.1.6/bin/pear'
-alias pecl='/Applications/MAMP/bin/php/php7.1.6/bin/pecl'
