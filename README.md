@@ -11,13 +11,13 @@ $ sh ./setup.sh
 
 2. Set the right permissions
 ```bash
-$ chown 744 ~/.ssh
-$ chown 644 ~/.ssh/$KEY_FILE.pub
-$ chown 600 ~/.ssh/$KEY_FILE
+$ chmod 744 ~/.ssh
+$ chmod 644 ~/.ssh/$KEY_FILE.pub
+$ chmod 600 ~/.ssh/$KEY_FILE
 
-$ chown 644 ~/.ssh/known_hosts
-$ chown 644 ~/.ssh/authorized_keys
-$ chown 644 ~/.ssh/config
+$ chmod 644 ~/.ssh/known_hosts
+$ chmod 644 ~/.ssh/authorized_keys
+$ chmod 644 ~/.ssh/config
 ```
 
 3. Run de `ssh-agent`
@@ -44,7 +44,7 @@ $ rm ~/.ssh/known_hosts
 
 3. Kill your `ssh-agent` daemons
 ```bash
-$ pids=`ps -ef | awk '/node/{ print $2 }'` && for p in $(echo $pids | tr -s "\n"); do kill $p; done
+$ pids=`ps -ef | grep ssh-agent | awk '{ print $3 }'` && for p in $(echo $pids | tr -s "\n"); do kill $p; done
 ```
 
 4. Run de `ssh-agent`

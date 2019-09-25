@@ -17,3 +17,4 @@ source ~/.vars
 source ~/.functions
 source ~/.aliases
 source ~/.colors
+source ~/.shortcuts

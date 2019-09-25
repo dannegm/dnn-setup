@@ -11,6 +11,9 @@ function custom_commit {
         git add -A && git commit -m "$1"
     fi
 }
+function commit_noverify {
+    git add -A && git commit -m "$1" --no-verify
+}
 function custom_push {
     if [ -d "./.git/hooks" ]; then
         git push origin HEAD -f --no-verify
@@ -26,5 +29,5 @@ function enable_hooks {
 }
 
 function dir {
-    echo "➜ $blueBold $PWD $reset"
+    echo "➜ ${blueBold}${PWD}${reset}"
 }

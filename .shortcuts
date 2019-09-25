@@ -1,0 +1,7 @@
+# links
+
+alias etc='/usr/local/etc/'
+alias localhost='cd ~/desktop/localhost'
+alias motive='cd ~/desktop/localhost/motive'
+
+alias .minecraft='cd "~/Library/Application Support/minecraft"'

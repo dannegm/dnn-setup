@@ -4,6 +4,7 @@ source ~/.vars &>/dev/null
 source ~/.functions &>/dev/null
 source ~/.aliases &>/dev/null
 source ~/.colors &>/dev/null
+source ~/.shortcuts &>/dev/null
 
 export WHO=$(whoami)
 
@@ -13,14 +14,15 @@ sudo chown -R $(whoami) /usr/local/var/homebrew/
 
 # List Of Common Programs
 casks=(
+    appcleaner
     google-chrome
     visual-studio-code
     hyper
     tunnelblick
     postman
     servpane
-    zeplin
     slack
+    microsoft-teams
     skype
     spotify
     qlcolorcode
@@ -29,18 +31,18 @@ casks=(
     qlimagesize
     webpquicklook
     xquartz
+    minecraft
 )
 
 # List Of Packages
 brews=(
     zsh
     node
-    mongodb
+    mongodb-community
     nginx
     screenfetch
     git
     mysql
-    Flask
     "wget --with-iri"
 )
 
@@ -82,27 +84,33 @@ vscode_extensions=(
     "alefragnani.Bookmarks"
     "bierner.color-info"
     "blairleduc.touch-bar-display"
+    "ChakrounAnas.turbo-console-log"
     "christian-kohler.path-intellisense"
     "cybai.yaml-key-viewer"
     "dariofuzinato.vue-peek"
+    "dinner-party-games.marshal-command-code"
+    "eamodio.gitlens"
     "EditorConfig.EditorConfig"
     "emilast.LogFileHighlighter"
     "Equinusocio.vsc-material-theme"
     "fabiospampinato.vscode-commands"
     "formulahendry.auto-close-tag"
     "formulahendry.code-runner"
-    "hoovercj.vscode-power-mode"
-    "humao.rest-client"
+    "JamesBirtles.svelte-vscode"
     "kisstkondoros.vscode-gutter-preview"
+    "Levertion.mcjson"
+    "mhutchie.git-graph"
+    "mikestead.dotenv"
     "mitchdenny.ecdc"
     "ms-python.python"
     "octref.vetur"
     "paulmolluzzo.convert-css-in-js"
+    "Pivotal.vscode-manifest-yaml"
     "PKief.material-icon-theme"
     "shakram02.bash-beautify"
     "shanoor.vscode-nginx"
-    "shyykoserhiy.vscode-spotify"
     "toba.vsfire"
+    "vincaslt.highlight-matching-tag"
     "wholroyd.jinja"
     "wix.vscode-import-cost"
 )
@@ -112,7 +120,7 @@ vscode_extensions=(
 # Keep Administrator Alive
 function grant_access {
     clear
-    echo -e "$greenBold \nPlease, enter your password to grant root access $reset"
+    echo -e "${greenBold}Please, enter your password to grant root access${reset}"
     if [[ -z "${CI}" ]]; then
     sudo -v
     while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
@@ -122,8 +130,8 @@ function grant_access {
 # Prompt
 function prompt {
     if [[ -z "${CI}" ]]; then
-        echo "\nType $cyanBold \b^C$reset to cancel: $blueBold"
-        read -p "🖥  $blue $1 ...$reset"
+        echo "Type ${redBold}^C${reset} to cancel:${blueBold}"
+        read -p "🖥  ${blue}${1} ...${reset}"
     fi
 }
 
@@ -134,11 +142,11 @@ function install {
     for pkg in "$@";
     do
         exec="$cmd $pkg"
-        prompt "⏳  $yellow Execute: $exec $reset"
+        prompt "⏳  ${yellow}Execute: ${exec}${reset}"
         if ${exec} ; then
-            echo "✅  $green Installed $pkg $reset"
+            echo "✅  ${green}Installed ${pkg}${reset}"
         else
-            echo "⛔️  $red Failed to execute: $exec $reset"
+            echo "⛔️  ${red}Failed to execute: ${exec}${reset}"
             if [[ ! -z "${CI}" ]]; then
                 exit 1
             fi
@@ -150,10 +158,10 @@ function install {
 function brew_install {
     if brew ls --versions "$1" >/dev/null; then
         if (brew outdated | grep "$1" > /dev/null); then 
-            echo "$blue Upgrading already installed package $cyanBold $1 $blue ...$reset"
+            echo "${blue}Upgrading already installed package ${cyanBold}${1}${blue}... ${reset}"
             brew upgrade "$1"
         else 
-            echo "$green Latest $1 is already installed $reset"
+            echo "${green}Latest ${1} is already installed${reset}"
         fi
     else
         brew install "$1"
@@ -181,7 +189,8 @@ function print_menu {
     echo "$purpleBold 10)$reset Setup Environment"
     echo "$purpleBold 11)$reset Install ZSH Plugins"
     echo "$purpleBold 12)$reset Final Setup"
-    echo "\nEnter $purpleBold \b1$reset to $purpleBold \b12$reset. Type $cyanBold \b'exit'$reset to cancel: $blueBold"
+    echo ""
+    echo "Enter ${purpleBold}1${reset} to ${purpleBold}12${reset}. Type ${redBold}exit${reset} to cancel:${blueBold}"
 
     read -r OPTION
 
@@ -251,11 +260,13 @@ function install_homebrew {
     if test ! "$(command -v brew)"; then
         prompt "Install Homebrew"
         ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        brew tap mongodb/brew
     else
         if [[ -z "${CI}" ]]; then
             prompt "Update Homebrew"
             brew update
             brew upgrade
+            brew tap mongodb/brew
         fi
     fi
 }
@@ -306,6 +317,7 @@ function install_vscode_extensions {
     do
         code --install-extension ${extension}
     done
+    mv vscode.settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 }
 
 # 7) Install Oh My ZSH
@@ -340,6 +352,7 @@ function setup_environment {
     for config in "${rc_files[@]}"
     do
         cp "${config}" "${HOME}/${config}"
+        sudo chown $WHO:staff "${HOME}/${config}"
     done
 }
 
@@ -356,14 +369,15 @@ function final_setup {
     prompt "Final Setup"
 
     su $WHO
-    sudo echo /usr/local/bin/zsh >> /etc/shells
+    #sudo echo /usr/local/bin/zsh >> /etc/shells
     chsh -s /usr/local/bin/zsh
     sudo chown $WHO:staff $HISTFILE
-    sudo chown $WHO:staff "${HOME}/.zsh_history"
     sudo chown $WHO:staff /data/db
     zsh
 
     exec ${SHELL} -l
+
+    echo "You to restart your computer to see the changes"
 }
 
 # ===[ Run ]===
