@@ -43,6 +43,7 @@ brews=(
     screenfetch
     git
     mysql
+    tree
     "wget --with-iri"
 )
 
@@ -88,6 +89,8 @@ vscode_extensions=(
     "christian-kohler.path-intellisense"
     "cybai.yaml-key-viewer"
     "dariofuzinato.vue-peek"
+    "Dart-Code.dart-code"
+    "Dart-Code.flutter"
     "dinner-party-games.marshal-command-code"
     "eamodio.gitlens"
     "EditorConfig.EditorConfig"
@@ -102,6 +105,7 @@ vscode_extensions=(
     "mhutchie.git-graph"
     "mikestead.dotenv"
     "mitchdenny.ecdc"
+    "ms-azuretools.vscode-docker"
     "ms-python.python"
     "octref.vetur"
     "paulmolluzzo.convert-css-in-js"
@@ -317,7 +321,7 @@ function install_vscode_extensions {
     do
         code --install-extension ${extension}
     done
-    mv vscode.settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+    cp vscode.settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 }
 
 # 7) Install Oh My ZSH

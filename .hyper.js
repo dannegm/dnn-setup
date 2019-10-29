@@ -48,7 +48,6 @@ module.exports = {
     'hyperterm-tab-icons',
     'hyperterm-dibdabs',
     'hyper-chesterish',
-    'hyper-spotify',
   ],
   localPlugins: [],
   keymaps: {

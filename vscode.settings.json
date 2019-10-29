@@ -1,0 +1,64 @@
+{
+    "workbench.colorTheme": "Material Theme High Contrast",
+    "materialTheme.autoApplyIcons": true,
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.fontAliasing": "antialiased",
+    "terminal.integrated.fontFamily": "Hack, Consolas, \"Lucida Console\", monospace",
+    "markdown.preview.breaks": true,
+    "workbench.list.horizontalScrolling": true,
+    "spotify.showLyricsButton": false,
+    "spotify.showMuteUnmuteVolumeButton": false,
+    "editor.rulers": [100],
+    "commands.commands": [
+        {
+            "text": "$(markdown)",
+            "command": "markdown.showPreviewToSide",
+            "tooltip": "Open markdown preview",
+            "filterFileRegex": ".*\\.md"
+        },
+        {
+            "text": "$(three-bars)",
+            "command": "workbench.action.toggleActivityBarVisibility",
+            "tooltip": "Toogle Activity Bar",
+            "alignment": "right"
+        },
+        {
+            "text": "$(terminal)",
+            "command": "workbench.action.terminal.toggleTerminal",
+            "tooltip": "Toogle Terminal",
+            "alignment": "right"
+        },
+        {
+            "text": "$(diff-ignored)",
+            "command": "git.stash",
+            "tooltip": "GIT Stash",
+            "alignment": "right"
+        },
+        {
+            "text": "$(diff-modified)",
+            "command": "git.stashPop",
+            "tooltip": "GIT Stash POP",
+            "alignment": "right"
+        }
+    ],
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.cursorBlinking": "phase",
+    "editor.cursorStyle": "line-thin",
+    "editor.minimap.enabled": false,
+    "files.defaultLanguage": "javascript",
+    "workbench.commandPalette.history": 100,
+    "workbench.statusBar.feedback.visible": false,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "explorer.sortOrder": "type",
+    "bookmarks.saveBookmarksInProject": true,
+    "workbench.activityBar.visible": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "git.autofetch": true,
+    "terminal.integrated.rendererType": "dom",
+    "powermode.enabled": true
+}

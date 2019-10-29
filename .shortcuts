@@ -1,7 +1,8 @@
 # Shortcuts
 
 alias etc='/usr/local/etc/'
-alias localhost='cd ~/desktop/localhost'
-alias motive='cd ~/desktop/localhost/motive'
+alias workspace='cd ~/desktop/workspace'
+alias www='cd ~/desktop/workspace'
+alias motive='cd ~/desktop/workspace/motive'
 
-alias .minecraft='cd "~/Library/Application Support/minecraft"'
+alias .minecraft='cd "${HOME}/Library/Application Support/minecraft'
