@@ -68,6 +68,7 @@ alias @diff='git diff'
 alias @push!='git push -f'
 alias @pull!='git pull --rebase'
 alias @commit!='commit_noverify'
+alias @reset='git reset --hard'
 
 alias @enhooks='enable_hooks'
 alias @dishooks='disable_hooks'
