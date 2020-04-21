@@ -3,6 +3,5 @@
 alias etc='/usr/local/etc/'
 alias workspace='cd ~/desktop/workspace'
 alias www='cd ~/desktop/workspace'
-alias motive='cd ~/desktop/workspace/motive'
 
-alias .minecraft='cd "${HOME}/Library/Application Support/minecraft'
+alias .minecraft='cd "${HOME}/Library/Application Support/minecraft"'

@@ -9,8 +9,8 @@ source ~/.shortcuts &>/dev/null
 export WHO=$(whoami)
 
 # Givin Permision to Brew/Cask
-sudo chown -R $(whoami) /usr/local/Homebrew
-sudo chown -R $(whoami) /usr/local/var/homebrew/
+# sudo chown -R $(whoami) /usr/local/Homebrew
+# sudo chown -R $(whoami) /usr/local/var/homebrew/
 
 # List Of Common Programs
 casks=(
@@ -22,8 +22,6 @@ casks=(
     postman
     servpane
     slack
-    microsoft-teams
-    skype
     spotify
     qlcolorcode
     qlstephen
@@ -85,36 +83,46 @@ vscode_extensions=(
     "alefragnani.Bookmarks"
     "bierner.color-info"
     "blairleduc.touch-bar-display"
+    "bungcip.better-toml"
     "ChakrounAnas.turbo-console-log"
     "christian-kohler.path-intellisense"
     "cybai.yaml-key-viewer"
     "dariofuzinato.vue-peek"
-    "Dart-Code.dart-code"
-    "Dart-Code.flutter"
+#    "Dart-Code.dart-code"
+#    "Dart-Code.flutter"
     "dinner-party-games.marshal-command-code"
     "eamodio.gitlens"
     "EditorConfig.EditorConfig"
     "emilast.LogFileHighlighter"
+    "Equinusocio.vsc-community-material-theme"
     "Equinusocio.vsc-material-theme"
+    "equinusocio.vsc-material-theme-icons"
+    "esbenp.prettier-vscode"
     "fabiospampinato.vscode-commands"
     "formulahendry.auto-close-tag"
     "formulahendry.code-runner"
+#    "GrapeCity.gc-excelviewer"
     "JamesBirtles.svelte-vscode"
+#    "johnpapa.vscode-peacock"
     "kisstkondoros.vscode-gutter-preview"
     "Levertion.mcjson"
     "mhutchie.git-graph"
     "mikestead.dotenv"
-    "mitchdenny.ecdc"
-    "ms-azuretools.vscode-docker"
+#    "mitchdenny.ecdc"
+#    "ms-azuretools.vscode-docker"
+    "ms-dotnettools.csharp"
     "ms-python.python"
+    "ms-vscode.Go"
     "octref.vetur"
-    "paulmolluzzo.convert-css-in-js"
+#    "paulmolluzzo.convert-css-in-js"
     "Pivotal.vscode-manifest-yaml"
     "PKief.material-icon-theme"
     "shakram02.bash-beautify"
     "shanoor.vscode-nginx"
+    "silvenon.mdx"
     "toba.vsfire"
     "vincaslt.highlight-matching-tag"
+    "VisualStudioExptTeam.vscodeintellicode"
     "wholroyd.jinja"
     "wix.vscode-import-cost"
 )
@@ -124,7 +132,7 @@ vscode_extensions=(
 # Keep Administrator Alive
 function grant_access {
     clear
-    echo -e "${greenBold}Please, enter your password to grant root access${reset}"
+    echo "${greenBold}Please, enter your password to grant root access${reset}"
     if [[ -z "${CI}" ]]; then
     sudo -v
     while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
@@ -252,7 +260,15 @@ function choicer {
     ((++OPTION))
 
     if [ "$IS_FINISHED" = false ] ; then
+        yesno_prompt
         choicer $OPTION
+    fi
+}
+
+function yesno_prompt {
+    read -p "Continue... (${greenBold}Y${green}es${reset}/${redBold}N${red}o${reset}): " YN
+    if [[ $YN =~ ^[Nn](o)?$ ]] ; then
+        exit 1
     fi
 }
 
@@ -385,6 +401,17 @@ function final_setup {
 }
 
 # ===[ Run ]===
-
 grant_access
-print_menu
+
+while :; do
+    case $1 in
+        -s | --step)
+            choicer $2
+            break;;
+        *)
+            print_menu
+            break
+    esac
+    shift
+done
+

@@ -21,6 +21,7 @@ alias @ports='lsof -nP | grep LISTEN'
 alias @ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias @now='date +"%Y-%m-%d @ %T"'
 alias @extract='uncompress_files'
+
 # Nginx
 
 alias nxstart='sudo brew services start nginx'
@@ -33,6 +34,7 @@ alias nxconf='nano /usr/local/etc/nginx/nginx.conf'
 
 alias @install='npm install'
 alias @dev='npm run dev'
+alias @debug='npm run debug'
 alias @debugger='npm run debug'
 alias @test='npm run test'
 alias @unit='npm run test:unit'
@@ -43,6 +45,12 @@ alias @build='npm run build'
 alias @deploy='npm run deploy'
 alias @mongo='mongod --config /usr/local/etc/mongod.conf'
 alias @extensions='generate_vscode_extensions_file'
+
+# Voila
+alias @lint='npm run tsLint && npm run esLint && lerna run lint'
+alias @prettier='npx prettier "**/*.{ts,tsx,js,jsx,json}" --check'
+
+alias composer='php ~/composer.phar'
 
 # GIT
 
@@ -56,7 +64,7 @@ alias grs='git rebase --skip'
 alias @status='git status'
 alias @log='git log --oneline'
 alias @commit='git add . && git commit -m'
-alias @checkout='git checkout'
+alias @checkout='git fetch && git checkout'
 alias @fetch='git fetch --all'
 alias @push='git push origin HEAD -f'
 alias @pull='git pull --rebase'
