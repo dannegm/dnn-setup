@@ -11,6 +11,7 @@ alias @reload='reload_source'
 
 alias @dir='dir'
 alias @ls='ls -la'
+alias @pk='cd ./packages'
 
 # Tools
 
@@ -22,33 +23,24 @@ alias @ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias @now='date +"%Y-%m-%d @ %T"'
 alias @extract='uncompress_files'
 
-# Nginx
-
-alias nxstart='sudo brew services start nginx'
-alias nxstop='sudo brew services stop nginx'
-alias nxrestart='sudo brew services restart nginx'
-alias nxreload='sudo brew services reload nginx'
-alias nxconf='nano /usr/local/etc/nginx/nginx.conf'
-
 # Dev
 
+alias @run='npm run'
 alias @install='npm install'
 alias @dev='npm run dev'
 alias @debug='npm run debug'
-alias @debugger='npm run debug'
 alias @test='npm run test'
 alias @unit='npm run test:unit'
-alias @e2e='npm run e2e'
-alias @migrate='npm run migrate'
+alias @e2e='npm run test:e2e'
 alias @serve='npm run serve'
 alias @build='npm run build'
 alias @deploy='npm run deploy'
+alias @storybook='npm run storybook'
 alias @mongo='mongod --config /usr/local/etc/mongod.conf'
 alias @extensions='generate_vscode_extensions_file'
-
-# Voila
-alias @lint='npm run tsLint && npm run esLint && lerna run lint'
-alias @prettier='npx prettier "**/*.{ts,tsx,js,jsx,json}" --check'
+alias @lint='npm run lint'
+alias @prettier='npm run prettier'
+alias @jest='npx jest -u --coverage false'
 
 alias composer='php ~/composer.phar'
 
@@ -63,11 +55,11 @@ alias grs='git rebase --skip'
 
 alias @status='git status'
 alias @log='git log --oneline'
-alias @commit='git add . && git commit -m'
+alias @commit='git add -A && git commit -m'
 alias @checkout='git fetch && git checkout'
 alias @fetch='git fetch --all'
-alias @push='git push origin HEAD -f'
-alias @pull='git pull --rebase'
+alias @push='git push'
+alias @pull='git pull'
 alias @stash='git stash'
 alias @pop='git stash pop'
 alias @drop='git stash drop'
@@ -80,3 +72,6 @@ alias @reset='git reset --hard'
 
 alias @enhooks='enable_hooks'
 alias @dishooks='disable_hooks'
+
+# Fucking expo
+alias expo='nvm use v12 && expo'
