@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/env bash
 
-source ~/.vars &>/dev/null
-source ~/.functions &>/dev/null
-source ~/.aliases &>/dev/null
-source ~/.colors &>/dev/null
-source ~/.shortcuts &>/dev/null
+#source ~/.vars &>/dev/null
+#source ~/.functions &>/dev/null
+#source ~/.aliases &>/dev/null
+#source ~/.colors &>/dev/null
+#source ~/.shortcuts &>/dev/null
 
 export WHO=$(whoami)
 
@@ -24,23 +24,21 @@ cask_packages=(
     spotify
     qlstephen
     webpquicklook
-    xquartz
     minecraft
     1password
-    adoptopenjdk
+    adoptopenjdk/openjdk/adoptopenjdk8
     android-sdk
     android-studio
-    androidtool
+    android-platform-tools
     discord
-    docker
+    homebrew/cask/docker
     figma
     keybase
     notion
     onyx
     react-native-debugger
     runjs
-    sip
-    spark
+    homebrew/cask/sip
     the-unarchiver
     vlc
     whatsapp
@@ -49,11 +47,14 @@ cask_packages=(
 
 # List of Packages
 brew_packages=(
-    zsh
+    go
     screenfetch
-    git
     tree
     catimg
+    watchman
+    gradle
+    fastlane
+    highlight
     "wget --with-iri"
 )
 
@@ -67,26 +68,114 @@ npm_global_packages=(
 
 # List of Mac Default Confings
 mac_defaults_configs=(
-    "com.apple.screencapture location ${HOME}/Desktop/Screenshots"
+    # Set sidebar icon size to medium
+    "NSGlobalDomain NSTableViewDefaultSizeMode -int 2"
+
+    # Expand save panel by default
+    "NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true"
+    "NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true"
+
+    # Expand print panel by default
+    "NSGlobalDomain PMPrintingExpandedStateForPrint -bool true"
+    "NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true"
+
+    # Save to disk (not to iCloud) by default
+    "NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false"
+
+    # Disable auto-correct
+    "NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false"
+
+    # Require password immediately after sleep or screen saver begins
+    "com.apple.screensaver askForPassword -int 1"
+    "com.apple.screensaver askForPasswordDelay -int 0"
+
+    # Save screenshots to the desktop
+    "com.apple.screencapture location -string '${HOME}/Desktop/Screenshots'"
+
+    # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+    "com.apple.screencapture type -string 'png'"
+
+    # Save screenshots to the desktop
+    "com.apple.screencapture name -string 'screenshot'"
+
+
+    # Set Desktop as the default location for new Finder windows ('PfDe')
+    # For other paths, use `PfLo` and `file:///full/path/here/`
+    "com.apple.finder NewWindowTarget -string 'PfLo'"
+    "com.apple.finder NewWindowTargetPath -string 'file://${HOME}'"
+
+    # Show icons for hard drives, servers, and removable media on the desktop
+    "com.apple.finder ShowExternalHardDrivesOnDesktop -bool true"
+    "com.apple.finder ShowHardDrivesOnDesktop -bool true"
+    "com.apple.finder ShowRemovableMediaOnDesktop -bool true"
+
+    # Finder: show all filename extensions
+    "NSGlobalDomain AppleShowAllExtensions -bool true"
+
+    # Finder: allow text selection in Quick Look
     "com.apple.finder QLEnableTextSelection -bool true"
+
+    # Finder: always order folders on top
+    "com.apple.finder _FXSortFoldersFirst -bool true"
+
+    # When performing a search, search the current folder by default
+    "com.apple.finder FXDefaultSearchScope -string 'SCcf'"
+
+    # Disable the warning when changing a file extension
+    "com.apple.finder FXEnableExtensionChangeWarning -bool false"
+
+    # Avoid creating .DS_Store files on network volumes
     "com.apple.desktopservices DSDontWriteNetworkStores -bool true"
     "com.apple.desktopservices DSDontWriteUSBStores -bool true"
-    "NSGlobalDomain AppleShowAllExtensions -bool true"
-    "com.apple.finder ShowStatusBar -bool true"
-    "com.apple.finder ShowPathbar -bool true"
-    "com.apple.finder _FXSortFoldersFirst -bool true"
-    "com.apple.finder FXDefaultSearchScope -string 'SCcf'"
+
+    # Use list view in all Finder windows by default
+    # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
+    "com.apple.finder FXPreferredViewStyle -string 'clmv'"
+
+    # Automatically hide and show the Dock
+    "com.apple.dock autohide -bool true"
+
+    # Automatically hide and show the Dock
+    "com.apple.dock show-recents -bool false"
+
+    # Enable magnification effect on the Dock
+    "com.apple.dock magnification -bool true"
+    "com.apple.dock mod-count -int 18"
+
+    # Top right screen corner → Start screen saver
+    "com.apple.dock wvous-tr-corner -int 5"
+    "com.apple.dock wvous-tr-modifier -int 0"
+
+    # Bottom left screen corner → Launchpad
+    "com.apple.dock wvous-bl-corner -int 11"
+    "com.apple.dock wvous-bl-modifier -int 0"
+
+    # Bottom right screen corner → Desktop
+    "com.apple.dock wvous-br-corner -int 4"
+    "com.apple.dock wvous-br-modifier -int 0"
+
+    # Enable Safari’s debug menu
+    "com.apple.Safari IncludeInternalDebugMenu -bool true"
+
+    # Enable the Develop menu and the Web Inspector in Safari
+    "com.apple.Safari IncludeDevelopMenu -bool true"
+    "com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true"
+    "com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true"
+
+    # Add a context menu item for showing the Web Inspector in web views
+    "NSGlobalDomain WebKitDeveloperExtras -bool true"
 )
 
 # List of dotfiles
 dot_files=(
-    ".aliases"
+    ".zshrc"
     ".vars"
     ".functions"
+    ".aliases"
     ".colors"
-    ".zshrc"
-#    ".hyper.js"
+    ".shortcuts"
     ".gitconfig"
+#    ".hyper.js"
 )
 
 # VSCode Extensions
@@ -206,7 +295,7 @@ function print_menu {
     echo "$purpleBold 12)$reset Install NPM Global Packages"
     echo "$purpleBold 13)$reset Final Setup"
     echo ""
-    echo "Enter ${purpleBold}1${reset} to ${purpleBold}12${reset}. Type ${redBold}exit${reset} to cancel:${blueBold}"
+    echo "Enter ${purpleBold}1${reset} to ${purpleBold}13${reset}. Type ${redBold}exit${reset} to cancel:${blueBold}"
 
     read -r OPTION
 
@@ -311,6 +400,7 @@ function install_packages {
     clear
     prompt "Install Packages"
     install 'brew install' "${brew_packages[@]}"
+    gem install cocoapods
 }
 
 # 4) Setup Mac Defaults
@@ -319,12 +409,23 @@ function setup_mac_defaults {
     prompt "Setup Mac Defaults"
 
     mkdir "${HOME}/Desktop/Screenshots"
+    mkdir "${HOME}/Desktop/workspace"
     mkdir -p /data/db
+
+    # Show the ~/Library folder
+    chflags nohidden ~/Library
+
+    # Add iOS Simulator to Launchpad
+    ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app" "/Applications/iOS Simulator.app"
 
     for config in "${mac_defaults_configs[@]}"
     do
         defaults write $config
     done
+
+    killall cfprefsd
+    killall Dock
+    killall Safari
     killall Finder
     killall SystemUIServer
 }
@@ -371,8 +472,9 @@ function setup_environment {
     prompt "Setup Environment"
     for config in "${dot_files[@]}"
     do
-        cp "${config}" "${HOME}/${config}"
+        sudo cp "${config}" "${HOME}/${config}"
         sudo chown $WHO:staff "${HOME}/${config}"
+        sudo chmod 755 "${HOME}/${config}"
     done
 }
 
@@ -388,14 +490,14 @@ function install_nvm {
     clear
     prompt "Install NVM"
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-    exec ${SHELL} -l
-    nvm 
-
+    sudo chown $WHO:staff "${HOME}/.nvm"
 }
+
 # 12) Install NPM Global Packages
 function install_npm_globals {
     clear
     prompt "Install NPM Global Packages"
+    # nvm install v14
     for npm_package in "${npm_global_packages[@]}"
     do
         npm install -g ${npm_package}
@@ -411,7 +513,6 @@ function final_setup {
     #sudo echo /usr/local/bin/zsh >> /etc/shells
     #chsh -s /usr/local/bin/zsh
     sudo chown $WHO:staff $HISTFILE
-    sudo chown $WHO:staff /data/db
     zsh
 
     exec ${SHELL} -l

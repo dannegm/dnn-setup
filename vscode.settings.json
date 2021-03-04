@@ -1,6 +1,9 @@
 {
     "terminal.integrated.fontFamily": "Hack, Consolas, \"Lucida Console\", monospace",
-    "editor.rulers": [80, 100],
+    "editor.fontFamily": "Hack, Consolas, \"Lucida Console\", monospace",
+    "editor.rulers": [
+        100
+    ],
     "commands.commands": [
         {
             "text": "$(three-bars)",
@@ -14,5 +17,68 @@
             "tooltip": "Toogle Terminal",
             "alignment": "right"
         }
-    ]
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontSize": 14,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.comments.ignoreEmptyLines": false,
+    "editor.minimap.enabled": false,
+    "editor.quickSuggestionsDelay": 15,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.tabCompletion": "onlySnippets",
+    "explorer.sortOrder": "type",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.formatOnPaste": true,
+    "workbench.tree.indent": 12,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "breadcrumbs.showArrays": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.settings.useSplitJSON": true,
+    "workbench.fontAliasing": "antialiased",
+    "workbench.list.horizontalScrolling": true,
+    "workbench.commandPalette.history": 100,
+    "terminal.external.osxExec": "Hyper.app",
+    "terminal.integrated.fontSize": 14,
+    "gitlens.hovers.avatarSize": 22,
+    "workbench.colorTheme": "Community Material Theme High Contrast",
+    "workbench.colorCustomizations": {
+        "[Material Theme Darker]": {
+            "activityBarBadge.background": "#AB47BC",
+            "activityBar.activeBorder": "#AB47BC",
+            "list.activeSelectionForeground": "#AB47BC",
+            "list.inactiveSelectionForeground": "#AB47BC",
+            "list.highlightForeground": "#AB47BC",
+            "scrollbarSlider.activeBackground": "#AB47BC50",
+            "editorSuggestWidget.highlightForeground": "#AB47BC",
+            "textLink.foreground": "#AB47BC",
+            "progressBar.background": "#AB47BC",
+            "pickerGroup.foreground": "#AB47BC",
+            "tab.activeBorder": "#AB47BC",
+            "notificationLink.foreground": "#AB47BC",
+            "editorWidget.resizeBorder": "#AB47BC",
+            "editorWidget.border": "#AB47BC",
+            "settings.modifiedItemIndicator": "#AB47BC",
+            "settings.headerForeground": "#AB47BC",
+            "panelTitle.activeBorder": "#AB47BC",
+            "breadcrumb.activeSelectionForeground": "#AB47BC",
+            "menu.selectionForeground": "#AB47BC",
+            "menubar.selectionForeground": "#AB47BC",
+            "editor.findMatchBorder": "#AB47BC",
+            "selection.background": "#AB47BC40",
+            "statusBarItem.remoteBackground": "#AB47BC"
+        }
+    },
+    "materialTheme.accent": "Purple",
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "gitlens.blame.highlight.enabled": false,
+    "gitlens.menus": false
 }

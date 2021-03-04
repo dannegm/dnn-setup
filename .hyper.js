@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     updateChannel: 'stable',
-    fontSize: 12,
+    fontSize: 14,
     fontFamily: 'Hack, Consolas, "Lucida Console", monospace',
     cursorColor: 'rgba(248,28,229,0.8)',
     cursorShape: 'BLOCK',
