@@ -11,7 +11,6 @@ alias @reload='reload_source'
 
 alias @dir='dir'
 alias @ls='ls -la'
-alias @pk='cd ./packages'
 
 # Tools
 
@@ -25,22 +24,20 @@ alias @extract='uncompress_files'
 
 # Dev
 
-alias @run='npm run'
+alias @run='yarn run'
 alias @install='npm install'
-alias @dev='npm run dev'
-alias @debug='npm run debug'
-alias @test='npm run test'
-alias @unit='npm run test:unit'
-alias @e2e='npm run test:e2e'
-alias @serve='npm run serve'
-alias @build='npm run build'
-alias @deploy='npm run deploy'
-alias @storybook='npm run storybook'
+alias @add='yarn add'
+alias @dev='yarn dev'
+alias @prettier='yarn prettier'
+alias @prettier!='yarn prettier --write'
+alias @lint='yarn lint'
+alias @unit='yarn test:unit'
+alias @jest='npx jest -u --coverage false'
+alias @build='yarn build'
+alias @deploy='yarn deploy'
+alias @storybook='yarn storybook'
 alias @mongo='mongod --config /usr/local/etc/mongod.conf'
 alias @extensions='generate_vscode_extensions_file'
-alias @lint='npm run lint'
-alias @prettier='npm run prettier'
-alias @jest='npx jest -u --coverage false'
 
 alias composer='php ~/composer.phar'
 
@@ -52,11 +49,15 @@ alias gri='git rebase -i'
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
 alias grs='git rebase --skip'
+alias gmc='git merge --continue'
+alias gma='git merge --abort'
+alias gms='git merge --skip'
 
 alias @status='git status'
 alias @log='git log --oneline'
 alias @commit='git add -A && git commit -m'
-alias @checkout='git fetch && git checkout'
+alias @checkout!='git fetch && git checkout'
+alias @checkout='git checkout'
 alias @fetch='git fetch --all'
 alias @push='git push'
 alias @pull='git pull'
@@ -72,6 +73,3 @@ alias @reset='git reset --hard'
 
 alias @enhooks='enable_hooks'
 alias @dishooks='disable_hooks'
-
-# Fucking expo
-alias expo='nvm use v12 && expo'

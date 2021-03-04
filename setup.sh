@@ -12,45 +12,57 @@ export WHO=$(whoami)
 # sudo chown -R $(whoami) /usr/local/Homebrew
 # sudo chown -R $(whoami) /usr/local/var/homebrew/
 
-# List Of Common Programs
-casks=(
+# List of Common Programs
+# Visit for more https://formulae.brew.sh/cask/
+cask_packages=(
     appcleaner
     google-chrome
     visual-studio-code
-    hyper
-    tunnelblick
+#    hyper
     postman
-    servpane
     slack
     spotify
-    qlcolorcode
     qlstephen
-    quicklook-json
-    qlimagesize
     webpquicklook
     xquartz
     minecraft
+    1password
+    adoptopenjdk
+    android-sdk
+    android-studio
+    androidtool
+    discord
+    docker
+    figma
+    keybase
+    notion
+    onyx
+    react-native-debugger
+    runjs
+    sip
+    spark
+    the-unarchiver
+    vlc
+    whatsapp
+    zoom
 )
 
-# List Of Packages
-brews=(
+# List of Packages
+brew_packages=(
     zsh
-    node
-    mongodb-community
-    nginx
     screenfetch
     git
-    mysql
     tree
+    catimg
     "wget --with-iri"
 )
 
-# List of Git Confings
-git_configs=(
-    "user.name $DNN_USERNAME"
-    "user.email $DNN_GMAIL"
-    "core.editor nano"
-    "core.pager cat"
+# List of NPM Global Packages
+npm_global_packages=(
+    npm
+    yarn
+    serve
+    firebase-tools
 )
 
 # List of Mac Default Confings
@@ -67,71 +79,55 @@ mac_defaults_configs=(
 )
 
 # List of dotfiles
-rc_files=(
+dot_files=(
     ".aliases"
     ".vars"
     ".functions"
     ".colors"
     ".zshrc"
-    ".hyper.js"
+#    ".hyper.js"
     ".gitconfig"
 )
 
 # VSCode Extensions
 vscode_extensions=(
     "aaron-bond.better-comments"
-#    "alefragnani.Bookmarks"
     "BenStoyer.istanbul-ignore-code-snippets"
-#    "bierner.color-info"
+    "bierner.color-info"
     "blairleduc.touch-bar-display"
     "bungcip.better-toml"
     "christian-kohler.path-intellisense"
     "coppy.style-hook"
-    "cssho.vscode-svgviewer"
     "cybai.yaml-key-viewer"
-    "dariofuzinato.vue-peek"
-#    "dinner-party-games.marshal-command-code"
+    "dinner-party-games.marshal-command-code"
     "drKnoxy.eslint-disable-snippets"
     "eamodio.gitlens"
     "EditorConfig.EditorConfig"
-    "eg2.vscode-npm-script"
     "emilast.LogFileHighlighter"
-    "Equinusocio.vsc-community-material-theme"
-    "Equinusocio.vsc-material-theme"
-    "equinusocio.vsc-material-theme-icons"
-    "esbenp.prettier-vscode"
+#    "Equinusocio.vsc-community-material-theme"
+#    "Equinusocio.vsc-material-theme"
+#    "equinusocio.vsc-material-theme-icons"
+#    "esbenp.prettier-vscode"
     "fabiospampinato.vscode-commands"
     "formulahendry.auto-close-tag"
-    "formulahendry.code-runner"
     "gamunu.vscode-yarn"
     "gitduck.code-streaming"
     "golang.go"
-    "hediet.vscode-drawio"
-    "JamesBirtles.svelte-vscode"
     "jpoissonnier.vscode-styled-components"
     "kisstkondoros.vscode-gutter-preview"
     "Levertion.mcjson"
     "mhutchie.git-graph"
     "mikestead.dotenv"
-    "ms-azuretools.vscode-docker"
-    "ms-dotnettools.csharp"
-    "ms-python.python"
-    "ms-vscode.powershell"
-    "octref.vetur"
     "Pivotal.vscode-manifest-yaml"
-    "PKief.material-icon-theme"
-#    "Prisma.prisma"
-#    "RobbOwen.synthwave-vscode"
+#    "PKief.material-icon-theme"
     "shakram02.bash-beautify"
     "shanoor.vscode-nginx"
     "silvenon.mdx"
     "toba.vsfire"
-#    "uppercod.vscode-jsx-style"
     "vincaslt.highlight-matching-tag"
     "VisualStudioExptTeam.vscodeintellicode"
     "wholroyd.jinja"
     "wix.vscode-import-cost"
-#    "zuoez02.tslint-snippets"
 )
 
 # ===[ End of app list ]===
@@ -199,15 +195,16 @@ function print_menu {
     echo "$purpleBold  1)$reset Install Homebrew"
     echo "$purpleBold  2)$reset Install Programs"
     echo "$purpleBold  3)$reset Install Packages"
-    echo "$purpleBold  4)$reset Install NVM"
-    echo "$purpleBold  5)$reset Setup Mac Defaults"
-    echo "$purpleBold  6)$reset Install Visual Studio Code Extensions"
-    echo "$purpleBold  7)$reset Install Oh My ZSH"
-    echo "$purpleBold  8)$reset Install Spaceship Theme"
-    echo "$purpleBold  9)$reset Install Powerline Fonts"
-    echo "$purpleBold 10)$reset Setup Environment"
-    echo "$purpleBold 11)$reset Install ZSH Plugins"
-    echo "$purpleBold 12)$reset Final Setup"
+    echo "$purpleBold  4)$reset Setup Mac Defaults"
+    echo "$purpleBold  5)$reset Install Visual Studio Code Extensions"
+    echo "$purpleBold  6)$reset Install Oh My ZSH"
+    echo "$purpleBold  7)$reset Install Spaceship Theme"
+    echo "$purpleBold  8)$reset Install Powerline Fonts"
+    echo "$purpleBold  9)$reset Setup Environment"
+    echo "$purpleBold 10)$reset Install ZSH Plugins"
+    echo "$purpleBold 11)$reset Install NVM"
+    echo "$purpleBold 12)$reset Install NPM Global Packages"
+    echo "$purpleBold 13)$reset Final Setup"
     echo ""
     echo "Enter ${purpleBold}1${reset} to ${purpleBold}12${reset}. Type ${redBold}exit${reset} to cancel:${blueBold}"
 
@@ -230,30 +227,33 @@ function choicer {
             install_packages
             ;;
         4)
-            install_nvm
-            ;;
-        5)
             setup_mac_defaults
             ;;
-        6)
+        5)
             install_vscode_extensions
             ;;
-        7)
+        6)
             install_ohmyzsh
             ;;
-        8)
+        7)
             install_spaceship_theme
             ;;
-        9)
+        8)
             install_powerline_fonts
             ;;
-        10)
+        9)
             setup_environment
             ;;
-        11)
+        10)
             install_zsh_plugins
             ;;
+        11)
+            install_nvm
+            ;;
         12)
+            install_npm_globals
+            ;;
+        13)
             IS_FINISHED=true
             final_setup
             ;;
@@ -302,25 +302,18 @@ function install_homebrew {
 function install_programs {
     clear
     prompt "Install Programs"
-    brew tap caskroom/versions
-    install 'brew cask install' "${casks[@]}"
+    brew tap homebrew/cask-versions
+    install 'brew install' "${cask_packages[@]}"
 }
 
 # 3) Install Packages
 function install_packages {
     clear
     prompt "Install Packages"
-    install 'brew_install' "${brews[@]}"
+    install 'brew install' "${brew_packages[@]}"
 }
 
-# 4) Install NVM
-function install_nvm {
-    clear
-    prompt "Install NVM"
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-}
-
-# 5) Setup Mac Defaults
+# 4) Setup Mac Defaults
 function setup_mac_defaults {
     clear
     prompt "Setup Mac Defaults"
@@ -336,7 +329,7 @@ function setup_mac_defaults {
     killall SystemUIServer
 }
 
-# 6) Install Visual Studio Code Extensions
+# 5) Install Visual Studio Code Extensions
 function install_vscode_extensions {
     clear
     prompt "Install Visual Studio Code Extensions"
@@ -347,14 +340,14 @@ function install_vscode_extensions {
     cp vscode.settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 }
 
-# 7) Install Oh My ZSH
+# 6) Install Oh My ZSH
 function install_ohmyzsh {
     clear
     prompt "Install Oh My ZSH"
     sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 }
 
-# 8) Install Spaceship Theme
+# 7) Install Spaceship Theme
 function install_spaceship_theme {
     clear
     prompt "Install Spaceship Theme"
@@ -363,7 +356,7 @@ function install_spaceship_theme {
     ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 }
 
-# 9) Install Powerline Fonts
+# 8) Install Powerline Fonts
 function install_powerline_fonts {
     clear
     prompt "Install Powerline Fonts"
@@ -372,32 +365,51 @@ function install_powerline_fonts {
     rm -rf fonts
 }
 
-# 10) Setup Environment
+# 9) Setup Environment
 function setup_environment {
     clear
     prompt "Setup Environment"
-    for config in "${rc_files[@]}"
+    for config in "${dot_files[@]}"
     do
         cp "${config}" "${HOME}/${config}"
         sudo chown $WHO:staff "${HOME}/${config}"
     done
 }
 
-# 11) Install ZSH Plugins
+# 10) Install ZSH Plugins
 function install_zsh_plugins {
     clear
     prompt "Install ZSH Plugins"
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 }
 
-# 12) Final Setup
+# 11) Install NVM
+function install_nvm {
+    clear
+    prompt "Install NVM"
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+    exec ${SHELL} -l
+    nvm 
+
+}
+# 12) Install NPM Global Packages
+function install_npm_globals {
+    clear
+    prompt "Install NPM Global Packages"
+    for npm_package in "${npm_global_packages[@]}"
+    do
+        npm install -g ${npm_package}
+    done
+}
+
+# 13) Final Setup
 function final_setup {
     clear
     prompt "Final Setup"
 
     su $WHO
     #sudo echo /usr/local/bin/zsh >> /etc/shells
-    chsh -s /usr/local/bin/zsh
+    #chsh -s /usr/local/bin/zsh
     sudo chown $WHO:staff $HISTFILE
     sudo chown $WHO:staff /data/db
     zsh
