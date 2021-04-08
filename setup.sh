@@ -261,10 +261,10 @@ function install {
 # Brew Function
 function brew_install {
     if brew ls --versions "$1" >/dev/null; then
-        if (brew outdated | grep "$1" > /dev/null); then 
+        if (brew outdated | grep "$1" > /dev/null); then
             echo "${blue}Upgrading already installed package ${cyanBold}${1}${blue}... ${reset}"
             brew upgrade "$1"
-        else 
+        else
             echo "${green}Latest ${1} is already installed${reset}"
         fi
     else
@@ -483,6 +483,7 @@ function install_zsh_plugins {
     clear
     prompt "Install ZSH Plugins"
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 }
 
 # 11) Install NVM
@@ -534,5 +535,3 @@ while :; do
     esac
     shift
 done
-
-

@@ -5,7 +5,7 @@ ZSH_THEME="spaceship"
 
 # Plugins
 plugins=(
-  git docker encode64 httpie osx zsh-syntax-highlighting history web-search colored-man-pages
+  git docker encode64 httpie osx zsh-syntax-highlighting zsh-autosuggestions history web-search colored-man-pages
 )
 
 # Sources
