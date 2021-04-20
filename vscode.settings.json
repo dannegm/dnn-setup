@@ -32,7 +32,6 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "editor.find.addExtraSpaceOnTop": false,
-    "editor.formatOnPaste": true,
     "workbench.tree.indent": 12,
     "workbench.view.alwaysShowHeaderActions": true,
     "breadcrumbs.showArrays": false,
@@ -80,5 +79,11 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "gitlens.blame.highlight.enabled": false,
-    "gitlens.menus": false
+    "gitlens.menus": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

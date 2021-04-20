@@ -18,7 +18,7 @@ cask_packages=(
     appcleaner
     google-chrome
     visual-studio-code
-#    hyper
+    hyper
     postman
     slack
     spotify
@@ -31,14 +31,14 @@ cask_packages=(
     android-studio
     android-platform-tools
     discord
-    homebrew/cask/docker
+#    docker
     figma
     keybase
     notion
     onyx
     react-native-debugger
     runjs
-    homebrew/cask/sip
+    sip
     the-unarchiver
     vlc
     whatsapp
@@ -175,7 +175,7 @@ dot_files=(
     ".colors"
     ".shortcuts"
     ".gitconfig"
-#    ".hyper.js"
+    ".hyper.js"
 )
 
 # VSCode Extensions
@@ -186,20 +186,16 @@ vscode_extensions=(
     "blairleduc.touch-bar-display"
     "bungcip.better-toml"
     "christian-kohler.path-intellisense"
-    "coppy.style-hook"
-    "cybai.yaml-key-viewer"
-    "dinner-party-games.marshal-command-code"
     "drKnoxy.eslint-disable-snippets"
     "eamodio.gitlens"
     "EditorConfig.EditorConfig"
     "emilast.LogFileHighlighter"
-#    "Equinusocio.vsc-community-material-theme"
-#    "Equinusocio.vsc-material-theme"
-#    "equinusocio.vsc-material-theme-icons"
-#    "esbenp.prettier-vscode"
+    "Equinusocio.vsc-community-material-theme"
+    "Equinusocio.vsc-material-theme"
+    "equinusocio.vsc-material-theme-icons"
+    "esbenp.prettier-vscode"
     "fabiospampinato.vscode-commands"
     "formulahendry.auto-close-tag"
-    "gamunu.vscode-yarn"
     "gitduck.code-streaming"
     "golang.go"
     "jpoissonnier.vscode-styled-components"
@@ -207,8 +203,10 @@ vscode_extensions=(
     "Levertion.mcjson"
     "mhutchie.git-graph"
     "mikestead.dotenv"
+    "ms-azuretools.vscode-docker"
+    "octref.vetur"
     "Pivotal.vscode-manifest-yaml"
-#    "PKief.material-icon-theme"
+    "PKief.material-icon-theme"
     "shakram02.bash-beautify"
     "shanoor.vscode-nginx"
     "silvenon.mdx"
@@ -392,7 +390,7 @@ function install_programs {
     clear
     prompt "Install Programs"
     brew tap homebrew/cask-versions
-    install 'brew install' "${cask_packages[@]}"
+    install 'brew install --cask' "${cask_packages[@]}"
 }
 
 # 3) Install Packages

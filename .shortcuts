@@ -6,6 +6,4 @@ alias www='cd ~/desktop/workspace'
 
 alias .minecraft='cd "${HOME}/Library/Application Support/minecraft"'
 
-alias voila='cd ~/desktop/workspace/voila/packages/voila-frontend'
-
 alias wize='cd ~/desktop/workspace/wizeline'

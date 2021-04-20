@@ -39,7 +39,7 @@ module.exports = {
     copyOnSelect: false,
     commands: []
   },
-  
+
   plugins: [
     'hyper-startup',
     'hyperterm-cursor',
