@@ -373,14 +373,13 @@ function install_homebrew {
     clear
     if test ! "$(command -v brew)"; then
         prompt "Install Homebrew"
-        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-        brew tap mongodb/brew
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
     else
         if [[ -z "${CI}" ]]; then
             prompt "Update Homebrew"
             brew update
             brew upgrade
-            brew tap mongodb/brew
         fi
     fi
 }
@@ -397,6 +396,7 @@ function install_programs {
 function install_packages {
     clear
     prompt "Install Packages"
+    brew tap mongodb/brew
     install 'brew install' "${brew_packages[@]}"
     gem install cocoapods
 }
